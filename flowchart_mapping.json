@@ -1,0 +1,79 @@
+{
+    "flowchart": [
+        {
+            "head": 0,
+            "type": "q",
+            "body": "I'm in the mood for something",
+            "tails": [
+                {
+                    "fur": "dynamic",
+                    "tail": 1
+                },
+                {
+                    "fur": "funny",
+                    "tail": 2
+                },
+                {
+                    "fur": "calm",
+                    "tail": 3
+                },
+                {
+                    "fur": "moving",
+                    "tail": 4
+                },
+                {
+                    "fur": "mature",
+                    "tail": 5
+                },
+                {
+                    "fur": "intense",
+                    "tail": 6
+                },
+                {
+                    "fur": "scary",
+                    "tail": 7
+                }
+            ]
+        },
+        {
+            "head": 1,
+            "type": "q",
+            "body": "what type of action you lookin for?",
+            "tail": [
+                {
+                    "fur": "fighting!",
+                    "tail": 8
+                },
+                {
+                    "fur": "sports",
+                    "tail": 9
+                },
+                {
+                    "fur": "F U N",
+                    "tail": 10
+                }
+            ]
+        },
+        {
+            "head": 9,
+            "type": "q",
+            "body": "old-school or modern?",
+            "tail": [
+                {
+                    "fur": "old-school yo",
+                    "tail": 11
+                },
+                {
+                    "fur": "modern, duh",
+                    "tail": 12
+                }
+            ]
+        },
+        {
+            "head": 11,
+            "type": "a",
+            "body": "",
+            "tail": ["Hajime no Ippo", "Initial D", "Slam Dunk", "One Outs", "Major", "Hikaru no Go"]
+        }
+    ]
+}
