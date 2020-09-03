@@ -4,7 +4,7 @@
             "head": 0,
             "type": "q",
             "body": "I'm in the mood for something",
-            "tails": [
+            "tail": [
                 {
                     "fur": "dynamic",
                     "tail": 1

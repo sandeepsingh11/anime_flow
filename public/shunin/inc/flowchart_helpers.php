@@ -23,6 +23,22 @@ function checkHeads() {
 
 function checkHeadless() {}
 
+function getNodes() {
+    global $content_json;
+    
+    $nodes = [];
+    foreach ($content_json->flowchart as $node) {
+
+        // get only "question" nodes
+        if ($node->type === "q") {
+            array_push($nodes, ["head"=> $node->head, "body"=> $node->body]);
+        }
+    }
+
+
+    return $nodes;
+}
+
 function structureNode($head, $type, $body, $tail) {
     $tailStructure = '';
 
@@ -62,9 +78,6 @@ function structureNode($head, $type, $body, $tail) {
 function createNode($head, $type, $body, $tail = []) {
     global $file;
     global $content_json;
-
-    $content_string = json_encode($content_json);
-    $pos = 0;
 
     // go to end of json flowchart array
     fseek($file, -10, SEEK_END);
