@@ -42,7 +42,7 @@ function getNodes() {
 function structureNode($head, $type, $body, $tail) {
     $tailStructure = '';
 
-    if ($type === 'q') {
+    if ($type === 'question') {
         for ($i = 0; $i < sizeof($tail); $i++) {
             $tailStructure .= '{
                         "fur": "' . $tail[$i]["fur"] . '",
@@ -77,7 +77,6 @@ function structureNode($head, $type, $body, $tail) {
 
 function createNode($head, $type, $body, $tail = []) {
     global $file;
-    global $content_json;
 
     // go to end of json flowchart array
     fseek($file, -10, SEEK_END);

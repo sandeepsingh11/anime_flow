@@ -6,7 +6,6 @@
         if (this.readyState == 4 && this.status == 200) {
             flowchart_obj = JSON.parse(this.responseText);
             flowchart = flowchart_obj.flowchart;
-            // console.log(anime_db.flowchart[0].head);
         }
         else {
             flowchart = null;
@@ -20,8 +19,13 @@
 
 
 
-    // select handler
-    var selectEle = document.getElementById("head");
+
+
+
+
+
+    // select event handler
+    var selectEle = document.getElementById("pre-head");
 
     selectEle.addEventListener("change", function(e) {
         // get selected option
@@ -32,6 +36,7 @@
                 break;
             }
         }
+
 
         // get according node's tail values
         var tails = [];
@@ -52,14 +57,16 @@
             }
         }
 
+
         // write tail vals back to form
-        var headHeadEle = document.getElementById("head-head");
+        var headHeadEle = document.getElementById("head");
         // check for existing values and remove them
         if (headHeadEle.hasChildNodes()) {
             while (headHeadEle.firstChild) {
                 headHeadEle.removeChild(headHeadEle.lastChild);
             }
         }
+
 
         // add new vals
         for (var i = 0; i < tails.length; i++) {
@@ -72,28 +79,105 @@
         }
     });
 
+
+
+
+
+
+
+
+
+
+    // check radio answer
+    var radioTypeEle_arr = document.getElementsByName("type");
+    radioTypeEle_arr[0].addEventListener("change", radioHandler);
+    radioTypeEle_arr[1].addEventListener("change", radioHandler);
+    var nodeBodyEle = document.getElementById("body-container");
+    
+    function radioHandler() {
+        for (var i = 0; i < radioTypeEle_arr.length; i++) {
+            if (radioTypeEle_arr[i].checked === true) {
+                // selected radio
+
+                if (radioTypeEle_arr[i].value === "question") {
+                    nodeBodyEle.style.display = "block";
+                }
+                else {
+                    nodeBodyEle.style.display = "none";
+                }
+            }
+        }
+        console.log(document.getElementsByName("type")[0].checked);
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
+    // add / remove tail node logic
+    var tailAddEle = document.getElementById("tail-add");
+    var tailParent = document.getElementById("tails");
+    var tailCountEle = document.getElementById("tail-count");
+    var k = 2; // tail counter
+
+    
+    // add element -> on click, add new input node
+    tailAddEle.addEventListener("click", function() {
+        // update tail count
+        tailCountEle.setAttribute("value", k);
+
+
+        var divNode = document.createElement("div");
+        divNode.setAttribute("class", "tail-container");
+
+        var inputNode = document.createElement("input");
+        inputNode.setAttribute("type", "text");
+        inputNode.setAttribute("name", "tail-" + k);
+        inputNode.setAttribute("id", "tail-" + k);
+        
+        var spanNode = document.createElement("span");
+        spanNode.setAttribute("class", "button");
+        spanNode.setAttribute("id", "tail-delete-" + k++);
+        var spanText = document.createTextNode("-");
+        spanNode.appendChild(spanText);
+        
+        // add listener for the delete node button
+        spanNode.addEventListener("click", function(e) {
+            var clickedEle = e.target;
+            var tailId = clickedEle.getAttribute("id");
+            var tailNum = tailId.charAt(tailId.length - 1);
+            var tailArr = document.getElementsByClassName("tail-container");
+            
+            for (var i = 0; i < tailArr.length; i++) {
+                var currentTailId = tailArr[i].children[0].getAttribute("id");
+                var currentTailNum = currentTailId.charAt(currentTailId.length - 1);
+
+                if (currentTailNum === tailNum) {
+                    // matched id num; delete targeted node
+                    tailArr[i].remove();
+                    k--;
+
+                    // update tail count
+                    tailCountEle.setAttribute("value", k - 1);
+
+                    break;
+                }
+            }
+        });
+
+
+        divNode.appendChild(inputNode);
+        divNode.appendChild(spanNode);
+
+
+
+        tailParent.insertBefore(divNode, tailParent.childNodes[tailParent.childElementCount + 1]);
+    })
 })();
-
-
-function readFlowchart() {
-    var anime_db = "asjdnskajn";
-
-    // read flowchart_mapping json
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            anime_db = JSON.parse(this.responseText);
-            // console.log(anime_db.flowchart[0].head);
-            // return anime_db;
-        }
-        else {
-            return null;
-        }
-
-        // console.log(anime_db);  
-        return anime_db;
-    };
-
-    xmlhttp.open("GET", '../../flowchart_mapping.json', true);
-    xmlhttp.send(); 
-}

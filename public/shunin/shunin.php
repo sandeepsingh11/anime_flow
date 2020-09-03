@@ -17,9 +17,10 @@
         <h2 class="form-title">Create Node</h2>
 
         <div class="input-container">
-            <label for="head">What question does this connect to?</label>
-            <select name="head" id="head">
+            <label for="pre-head">What question does this connect to?</label>
+            <select name="pre-head" id="pre-head">
                 <option value="NULL"></option>
+
                 <?php
 
                 $nodes = getNodes();
@@ -31,13 +32,14 @@
                     <?php
                 }
                 ?> 
+
             </select>
         </div>
 
         <div class="input-container">
-            <label for="head-head">What question exactly?</label>
+            <label for="head">What question exactly?</label>
 
-            <select name="head-head" id="head-head"></select>
+            <select name="head" id="head"></select>
         </div>
 
         <div class="input-container">
@@ -50,23 +52,26 @@
             <label for="question">Answer</label>
         </div>
 
-        <div class="input-container">
-            <label for="body">What's the question? *IF TYPE=Q</label>
+        <div class="input-container" id="body-container" style="display: none;">
+            <label for="body">What's the question?</label>
 
             <input type="text" name="body" id="body">
         </div>
 
-        <div class="input-container">
+        <div class="input-container" id="tails">
             <label for="tail">What are the answers?</label>
 
             <div class="tail-container">
                 <input type="text" name="tail-1" id="tail-1">
-                <span class="button">+</span>
-                <span class="button">-</span>
+                <span class="button" id="tail-delete-1">-</span>
             </div>
+            
+            <span class="button" id="tail-add">+</span>
+
+            <input type="hidden" name="tail-count" id="tail-count" value="1">
         </div>
 
-        <input type="submit" value="Create">
+        <input type="submit" name="node-create" value="Create">
     </form>
 
     <?php
