@@ -6,6 +6,8 @@
         if (this.readyState == 4 && this.status == 200) {
             flowchart_obj = JSON.parse(this.responseText);
             flowchart = flowchart_obj.flowchart;
+
+            populatePreHead();
         }
         else {
             flowchart = null;
@@ -13,7 +15,38 @@
     };
 
     xmlhttp.open("GET", '../../flowchart_mapping.json', true);
-    xmlhttp.send(); 
+    xmlhttp.send();
+
+
+
+
+
+
+
+
+
+    
+    // populate pre-head select element
+    var preHeadEle = document.getElementById("pre-head");
+    
+    function populatePreHead() {
+        var preHead_arr = [];
+    
+        for (var i = 0; i < flowchart.length; i++) {
+            if (flowchart[i].type === "q") {
+                var tempNode_obj = {head: flowchart[i].head, body: flowchart[i].body};
+                preHead_arr.push(tempNode_obj);
+    
+    
+                var optionNode = document.createElement("option");
+                optionNode.setAttribute("value", flowchart[i].head);
+                var optionText = document.createTextNode(flowchart[i].body);
+                optionNode.appendChild(optionText);
+    
+                preHeadEle.appendChild(optionNode);
+            }
+        }
+    }
 
 
 
@@ -24,15 +57,13 @@
 
 
 
-    // select event handler
-    var selectEle = document.getElementById("pre-head");
-
-    selectEle.addEventListener("change", function(e) {
+    // pre-head select event handler
+    preHeadEle.addEventListener("change", function() {
         // get selected option
-        for (var i = 0; i < selectEle.options.length; i++) {
-            if (selectEle.options[i].selected === true) {
+        for (var i = 0; i < preHeadEle.options.length; i++) {
+            if (preHeadEle.options[i].selected === true) {
                 // option's value = node's head value
-                var head = selectEle.options[i].value;
+                var head = preHeadEle.options[i].value;
                 break;
             }
         }
@@ -99,7 +130,7 @@
             if (radioTypeEle_arr[i].checked === true) {
                 // selected radio
 
-                if (radioTypeEle_arr[i].value === "question") {
+                if (radioTypeEle_arr[i].value === "q") {
                     nodeBodyEle.style.display = "block";
                 }
                 else {
@@ -107,8 +138,6 @@
                 }
             }
         }
-        console.log(document.getElementsByName("type")[0].checked);
-
     }
     
 

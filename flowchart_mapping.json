@@ -73,7 +73,9 @@
             "head": 11,
             "type": "a",
             "body": "",
-            "tail": ["Hajime no Ippo", "Initial D", "Slam Dunk", "One Outs", "Major", "Hikaru no Go"]
+            "tail": [
+                "Hajime no Ippo", "Initial D", "Slam Dunk", "One Outs", "Major", "Hikaru no Go"
+            ]
         }
     ]
 }

@@ -1,6 +1,6 @@
 <?php
 
-$file_path = "../../flowchart_mapping.json";
+$file_path = "../../../flowchart_mapping.json";
 $file = fopen($file_path, "c+");
 $file_read = fread($file, filesize($file_path));
 $content_json = json_decode($file_read);
@@ -39,15 +39,38 @@ function getNodes() {
     return $nodes;
 }
 
+function findMaxTail() {
+    global $content_json;
+    $max = 0;
+
+    foreach ($content_json->flowchart as $node) {
+        // flowchart index
+
+        for ($i = 0; $i < sizeof($node->tail); $i++) {
+            // tail index
+
+            // if node's type = question && node's current tail index > max
+            if ( ($node->type == "q") && ($node->tail[$i]->tail > $max) ) {
+                $max = $node->tail[$i]->tail;
+            }
+        }
+    }
+
+    echo $max;
+    return $max;
+}
+
 function structureNode($head, $type, $body, $tail) {
     $tailStructure = '';
+    
+    if ($type === 'q') {
+        $tailMax = findMaxTail();
 
-    if ($type === 'question') {
         for ($i = 0; $i < sizeof($tail); $i++) {
             $tailStructure .= '{
-                        "fur": "' . $tail[$i]["fur"] . '",
-                        "tail": ' . $tail[$i]["tail"] . '  
-                    }';
+                    "fur": "' . $tail[$i] . '",
+                    "tail": ' . ++$tailMax . '  
+                }';
     
             $tailStructure .= ( $i === (sizeof($tail) - 1) ) ? '' : ',';
         }
@@ -88,6 +111,9 @@ function createNode($head, $type, $body, $tail = []) {
     fwrite($file, $newNode);
     fwrite($file, "]\n}");
 
+
+    header("Location: ../shunin.php?ok=node_created!");
+    exit();
 }
 
 function updateNode() {}
