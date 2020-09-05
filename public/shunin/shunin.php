@@ -53,12 +53,12 @@
         <div class="input-container" id="tails">
             <label for="tail">What are the answers?</label>
 
+            <span class="button" id="tail-add">+</span>
+
             <div class="tail-container">
                 <input type="text" name="tail-1" id="tail-1">
                 <span class="button" id="tail-delete-1">-</span>
             </div>
-            
-            <span class="button" id="tail-add">+</span>
 
             <input type="hidden" name="tail-count" id="tail-count" value="1">
         </div>

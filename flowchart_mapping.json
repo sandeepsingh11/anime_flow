@@ -76,6 +76,191 @@
             "tail": [
                 "Hajime no Ippo", "Initial D", "Slam Dunk", "One Outs", "Major", "Hikaru no Go"
             ]
+        },
+		{
+            "head": 12, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kuroko no Basket","Ace of Diamond","Yowamushi Pedal","Baby Steps","Haikyuu!","Free!","Eyeshield 21","Chihayafuru","Ping Pong"
+            ]
+        },
+        {
+            "head": 10, 
+            "type": "q", 
+            "body": "what kind of F U N?", 
+            "tail": [
+                {
+                    "fur": "hell yeah",
+                    "tail": 13  
+                },
+                {
+                    "fur": "HELL YEAH",
+                    "tail": 14  
+                },
+                {
+                    "fur": "eyegasm",
+                    "tail": 15  
+                },
+                {
+                    "fur": "eargasm",
+                    "tail": 16  
+                },
+                {
+                    "fur": "foodgasm",
+                    "tail": 17  
+                },
+                {
+                    "fur": "cartoon",
+                    "tail": 18  
+                },
+                {
+                    "fur": "tribute to superheros",
+                    "tail": 19  
+                },
+                {
+                    "fur": "zombie apocalypse",
+                    "tail": 20  
+                },
+                {
+                    "fur": "how stupid can it get?",
+                    "tail": 21  
+                },
+                {
+                    "fur": "old-school comic style",
+                    "tail": 22  
+                }
+            ]
+        },
+		{
+            "head": 8, 
+            "type": "q", 
+            "body": "action or adventure?", 
+            "tail": [
+                {
+                    "fur": "road trip adventure",
+                    "tail": 23  
+                },
+                {
+                    "fur": "full-blown action",
+                    "tail": 24  
+                }
+            ]
+        },
+		{
+            "head": 23, 
+            "type": "q", 
+            "body": "theme?", 
+            "tail": [
+                {
+                    "fur": "journey into manhood via mecha",
+                    "tail": 25  
+                },
+                {
+                    "fur": "steampunk scientific magic",
+                    "tail": 26  
+                },
+                {
+                    "fur": "space opera jazz",
+                    "tail": 27  
+                },
+                {
+                    "fur": "'30s in Chicago",
+                    "tail": 28  
+                },
+                {
+                    "fur": "talking (&) swords",
+                    "tail": 29  
+                },
+                {
+                    "fur": "aerial combat",
+                    "tail": 30  
+                },
+                {
+                    "fur": "hip-hop",
+                    "tail": 31  
+                },
+                {
+                    "fur": "historical",
+                    "tail": 32  
+                },
+                {
+                    "fur": "spirited away into a fantasy drama",
+                    "tail": 33  
+                }
+            ]
+        },
+		{
+            "head": 25, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Tengen Toppa Gurren Lagann"
+            ]
+        },
+		{
+            "head": 26, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Fullmetal Alchemist: Brotherhood"
+            ]
+        },
+		{
+            "head": 27, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Cowboy Bebop"
+            ]
+        },
+		{
+            "head": 28, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Baccano!"
+            ]
+        },
+		{
+            "head": 29, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Katanagatari"
+            ]
+        },
+		{
+            "head": 30, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Last Exile"
+            ]
+        },
+		{
+            "head": 31, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Samurai Champloo"
+            ]
+        },
+		{
+            "head": 32, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Rurouni Kenshin"
+            ]
+        },
+		{
+            "head": 33, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Twelve Kingdoms"
+            ]
         }
     ]
-}
+} 

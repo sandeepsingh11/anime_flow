@@ -56,7 +56,7 @@ function findMaxTail() {
         }
     }
 
-    echo $max;
+
     return $max;
 }
 
@@ -72,7 +72,8 @@ function structureNode($head, $type, $body, $tail) {
                     "tail": ' . ++$tailMax . '  
                 }';
     
-            $tailStructure .= ( $i === (sizeof($tail) - 1) ) ? '' : ',';
+            $tailStructure .= ( $i === (sizeof($tail) - 1) ) ? '' : ',
+                ';
         }
     }
     else {
@@ -109,8 +110,9 @@ function createNode($head, $type, $body, $tail = []) {
     $newNode = structureNode($head, $type, $body, $tail);
 
     fwrite($file, $newNode);
-    fwrite($file, "]\n}");
+    fwrite($file, "]\n} ");
 
+    fclose($file);
 
     header("Location: ../shunin.php?ok=node_created!");
     exit();

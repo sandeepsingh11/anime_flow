@@ -207,6 +207,6 @@
 
 
 
-        tailParent.insertBefore(divNode, tailParent.childNodes[tailParent.childElementCount + 1]);
+        tailParent.insertBefore(divNode, tailParent.childNodes[tailParent.childElementCount + 2]);
     })
 })();
