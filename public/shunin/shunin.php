@@ -51,12 +51,17 @@
 
         <!-- tails -->
         <div class="input-container" id="tails">
-            <label for="tail">What are the answers?</label>
+            <label for="tail">
+                What are the choices?<br>
+                <em>Enter title or an existing tail number</em>
+            </label>
 
             <span class="button" id="tail-add">+</span>
 
             <div class="tail-container">
-                <input type="text" name="tail-1" id="tail-1">
+                <input type="text" name="tail-text-1" id="tail-text-1">
+                <input type="number" name="tail-num-1" id="tail-num-1">
+
                 <span class="button" id="tail-delete-1">-</span>
             </div>
 

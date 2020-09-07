@@ -261,6 +261,152 @@
             "tail": [
                 "Twelve Kingdoms"
             ]
+        },
+		{
+            "head": 24, 
+            "type": "q", 
+            "body": "supernatural?", 
+            "tail": [
+                {
+                    "fur": "not really",
+                    "tail": 34  
+                },
+                {
+                    "fur": "journey into manhood via mecha",
+                    "tail": 25  
+                },
+                {
+                    "fur": "medieval fantasy",
+                    "tail": 35  
+                },
+                {
+                    "fur": "steampunk scientific magic",
+                    "tail": 26  
+                },
+                {
+                    "fur": "urban fantasy",
+                    "tail": 36  
+                },
+                {
+                    "fur": "martial arts",
+                    "tail": 37  
+                },
+                {
+                    "fur": "spirit hunting",
+                    "tail": 38  
+                },
+                {
+                    "fur": "magical girls",
+                    "tail": 39  
+                },
+                {
+                    "fur": "science fiction",
+                    "tail": 40  
+                },
+                {
+                    "fur": "samurai",
+                    "tail": 41  
+                },
+                {
+                    "fur": "superpowers",
+                    "tail": 42  
+                }
+            ]
+        },
+		{
+            "head": 34, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Black Lagoon","Phantom"
+            ]
+        },
+		{
+            "head": 35, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Rage of Bahamut: Genesis","Slayers","Hitsugi no Chaika","Akame ga Kill"
+            ]
+        },
+		{
+            "head": 36, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Zetsuen no Tempest","Hitman Reborn!","Shakugan no Shana"
+            ]
+        },
+		{
+            "head": 37, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kenichi","Ranma ½","Fist of the North Star"
+            ]
+        },
+		{
+            "head": 38, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Yuu Yuu Hakusho"
+            ]
+        },
+		{
+            "head": 39, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Sailor Moon","Cardcaptor Sakura","Lyrical Nanoha","Mahou Shoujo Madoka Magica","Princess Tutu"
+            ]
+        },
+		{
+            "head": 41, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Samurai Champloo","Rurouni Kenshin"
+            ]
+        },
+		{
+            "head": 42, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Darker Than Black"
+            ]
+        },
+		{
+            "head": 40, 
+            "type": "q", 
+            "body": "type of scifi?", 
+            "tail": [
+                {
+                    "fur": "shootout",
+                    "tail": 43  
+                },
+                {
+                    "fur": "mecha",
+                    "tail": 44  
+                }
+            ]
+        },
+		{
+            "head": 43, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Gungrave","Trigun","Outlaw Star"
+            ]
+        },
+		{
+            "head": 44, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Eureka Seven","Big O","Code Geass","Gunbuster","Full Metal Panic","Escaflowne","Macrosse"
+            ]
         }
     ]
 } 

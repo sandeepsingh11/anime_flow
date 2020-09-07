@@ -63,22 +63,38 @@ function findMaxTail() {
 function structureNode($head, $type, $body, $tail) {
     $tailStructure = '';
     
+
+    // if node is a 'question' type
     if ($type === 'q') {
         $tailMax = findMaxTail();
 
         for ($i = 0; $i < sizeof($tail); $i++) {
+
+            // if tail index does not exist (number field not filled), generate a new index number
+            $tailIndex = $tailMax;
+            if ($tail[$i]["tail"] === -1) {
+                $tailIndex = ++$tailMax;
+            }
+            else {
+                $tailIndex = $tail[$i]["tail"];
+            }
+
+
+            // make string structure
             $tailStructure .= '{
-                    "fur": "' . $tail[$i] . '",
-                    "tail": ' . ++$tailMax . '  
+                    "fur": "' . $tail[$i]["fur"] . '",
+                    "tail": ' . $tailIndex . '  
                 }';
     
             $tailStructure .= ( $i === (sizeof($tail) - 1) ) ? '' : ',
                 ';
         }
     }
+
+    // if node is an 'answer' type
     else {
         for ($i = 0; $i < sizeof($tail); $i++) {
-            $tailStructure .= '"' . $tail[$i] . '"';
+            $tailStructure .= '"' . $tail[$i]["fur"] . '"';
     
             $tailStructure .= ( $i === (sizeof($tail) - 1) ) ? '' : ',';
         }

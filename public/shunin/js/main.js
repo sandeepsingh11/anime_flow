@@ -154,26 +154,32 @@
     var tailAddEle = document.getElementById("tail-add");
     var tailParent = document.getElementById("tails");
     var tailCountEle = document.getElementById("tail-count");
-    var k = 2; // tail counter
+    var tailEleId = 1; // id increment
+    var k = 1; // tail counter
 
     
     // add element -> on click, add new input node
     tailAddEle.addEventListener("click", function() {
         // update tail count
-        tailCountEle.setAttribute("value", k);
+        tailCountEle.setAttribute("value", ++k);
 
 
         var divNode = document.createElement("div");
         divNode.setAttribute("class", "tail-container");
 
-        var inputNode = document.createElement("input");
-        inputNode.setAttribute("type", "text");
-        inputNode.setAttribute("name", "tail-" + k);
-        inputNode.setAttribute("id", "tail-" + k);
+        var textInputNode = document.createElement("input");
+        textInputNode.setAttribute("type", "text");
+        textInputNode.setAttribute("name", "tail-text-" + ++tailEleId);
+        textInputNode.setAttribute("id", "tail-text-" + tailEleId);
+
+        var numInputNode = document.createElement("input");
+        numInputNode.setAttribute("type", "number");
+        numInputNode.setAttribute("name", "tail-num-" + tailEleId);
+        numInputNode.setAttribute("id", "tail-num-" + tailEleId);
         
         var spanNode = document.createElement("span");
         spanNode.setAttribute("class", "button");
-        spanNode.setAttribute("id", "tail-delete-" + k++);
+        spanNode.setAttribute("id", "tail-delete-" + tailEleId);
         var spanText = document.createTextNode("-");
         spanNode.appendChild(spanText);
         
@@ -181,12 +187,33 @@
         spanNode.addEventListener("click", function(e) {
             var clickedEle = e.target;
             var tailId = clickedEle.getAttribute("id");
-            var tailNum = tailId.charAt(tailId.length - 1);
+
+            var tailNum = '';
+            // get single or double digit
+            if (tailId.charAt(tailId.length - 2) === "-") {
+                tailNum = tailId.charAt(tailId.length - 1);
+            }
+            else {
+                tailNum = tailId.charAt(tailId.length - 2) + tailId.charAt(tailId.length - 1);
+            }
+
             var tailArr = document.getElementsByClassName("tail-container");
             
+
+
             for (var i = 0; i < tailArr.length; i++) {
                 var currentTailId = tailArr[i].children[0].getAttribute("id");
-                var currentTailNum = currentTailId.charAt(currentTailId.length - 1);
+                
+                var currentTailNum = '';
+                // get single or double digit
+                if (currentTailId.charAt(currentTailId.length - 2) === "-") {
+                    currentTailNum = currentTailId.charAt(currentTailId.length - 1);
+                }
+                else {
+                    currentTailNum = currentTailId.charAt(currentTailId.length - 2) + currentTailId.charAt(currentTailId.length - 1);
+                }
+
+
 
                 if (currentTailNum === tailNum) {
                     // matched id num; delete targeted node
@@ -194,7 +221,7 @@
                     k--;
 
                     // update tail count
-                    tailCountEle.setAttribute("value", k - 1);
+                    tailCountEle.setAttribute("value", k);
 
                     break;
                 }
@@ -202,7 +229,8 @@
         });
 
 
-        divNode.appendChild(inputNode);
+        divNode.appendChild(textInputNode);
+        divNode.appendChild(numInputNode);
         divNode.appendChild(spanNode);
 
 
