@@ -6,30 +6,30 @@
     <title>Anime Finder</title>
 </head>
 <body>
-    <?php
+    <main>
 
-    require_once("inc/search_db.php");
-    
-    $animeData = searchByTitle("Hanasaku Iroha");
-    print_r($animeData);
+        <!-- flowchart -->
+        <div id="flowchart-container">
+            <div id="flowchart-wrapper">
+                <!-- question -->
+                <div id="flowchart-question-container">
+                    <span id="flowchart-question"></span>
+                </div>
 
-    $tagsResult = searchByTags(["female protagonist", "slice of life", "rural", "comedy"]);
-    ?>
+                <!-- choices -->
+                <div id="flowchart-choices-container" class="flex"></div>
 
-    <ul>
+                <!-- previous question -->
+                <div id="flowchart-back-container">
+                    <span id="flowchart-back"><--</span>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <?php
 
-    foreach ($tagsResult as $anime) {
-        ?> <li><?php echo $anime ?></li> <?php
-    }
-    
-    ?>
 
-    </ul>
 
-    <?php
-
-    ?>
+    <script src="./js/main.js"></script>
 </body>
 </html>
