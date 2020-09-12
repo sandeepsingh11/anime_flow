@@ -24,6 +24,7 @@ xmlhttp.send();
 
 
 // global vars
+var questionsChosen_arr = [];
 var currentNodeIndex = 0;
 var previousNodeIndex = -1;
 
@@ -31,9 +32,22 @@ var flowchartQuestionEle = document.getElementById("flowchart-question");
 var flowchartChoicesContainerEle = document.getElementById("flowchart-choices-container");
 var flowchartBackEle = document.getElementById("flowchart-back");
 
+// previous question logic
 flowchartBackEle.addEventListener("click", function() {
-    var prevQuestionNode = getQuestionNode(previousNodeIndex);
-    createChoices(prevQuestionNode);
+    var prevNodeIndex = questionsChosen_arr.pop();
+    
+    if (prevNodeIndex !== undefined) {
+        var prevNode = getNextNode(prevNodeIndex);
+
+        if (prevNode.type === "q") {
+            // if question type
+            createChoices(prevNode);
+        }
+        else {
+            // if answer type
+            createAnswers(prevNode)
+        }
+    }
 });
 
 
@@ -42,9 +56,7 @@ flowchartBackEle.addEventListener("click", function() {
 
 // start flowchart in front-end
 function startFlowchart() {
-    flowchartQuestionEle.innerHTML = flowchart[0].body;
-    
-    
+
     // create choices node
     createChoices(flowchart[0]);
 }
@@ -57,7 +69,7 @@ function createChoices(currentNode) {
     // update global vals
     previousNodeIndex = getPreviousIndex(currentNodeIndex);
     currentNodeIndex = currentNode.head;
-    console.log(`prev:${previousNodeIndex}, current:${currentNodeIndex}`);
+    // console.log(`prev:${previousNodeIndex}, current:${currentNodeIndex}`);
 
     // clear any existing choices first
     if (flowchartChoicesContainerEle.hasChildNodes()) {
@@ -67,7 +79,12 @@ function createChoices(currentNode) {
     }
 
 
-    // create nodes
+
+    // change question
+    flowchartQuestionEle.innerHTML = currentNode.body;
+
+
+    // create choices nodes
     for (var i = 0; i < currentNode.tail.length; i++) {
         var spanNode = document.createElement("span");
         spanNode.setAttribute("class", "flowchart-choice");
@@ -80,8 +97,20 @@ function createChoices(currentNode) {
             var choiceIndex = clickedEle.dataset.choiceIndex; // html attr
             
             
-            var nextQuestionNode = getQuestionNode(choiceIndex);
-            createChoices(nextQuestionNode);
+
+            var nextNode = getNextNode(choiceIndex);
+
+            // update global arr
+            questionsChosen_arr.push(currentNode.head);
+
+            if (nextNode.type === "q") {
+                // if question type
+                createChoices(nextNode);
+            }
+            else {
+                // if answer type
+                createAnswers(nextNode)
+            }
         });
 
         flowchartChoicesContainerEle.appendChild(spanNode);
@@ -90,7 +119,90 @@ function createChoices(currentNode) {
 
 
 
-// get previous node =================== MAYBE JUST MAKE A "QUESTIONS CHOSEN" ARRAY LMAO
+// create answer nodes
+function createAnswers(answerNode) {
+
+    // update global vals
+    previousNodeIndex = getPreviousIndex(currentNodeIndex);
+    currentNodeIndex = answerNode.head;
+
+
+    
+    // clear any existing choices first
+    if (flowchartChoicesContainerEle.hasChildNodes()) {
+        while (flowchartChoicesContainerEle.firstChild) {
+            flowchartChoicesContainerEle.removeChild(flowchartChoicesContainerEle.lastChild);
+        }
+    }
+
+
+
+    // change "question" text
+    flowchartQuestionEle.innerHTML = "here are the results";
+
+
+    // create nodes
+    for (var i = 0; i < answerNode.tail.length; i++) {
+        var spanNode = document.createElement("span");
+        spanNode.setAttribute("class", "flowchart-choice");
+        spanNode.setAttribute("data-answer-title", answerNode.tail[i]);
+        var spanText = document.createTextNode(answerNode.tail[i]);
+        spanNode.appendChild(spanText);
+
+        spanNode.addEventListener("click", function(e) {
+            var clickedEle = e.target;
+            var animeTitle = clickedEle.dataset.answerTitle; // html attr
+            
+            
+
+            // update global arr
+            questionsChosen_arr.push(answerNode.head);
+
+
+
+            // get anime info (offline db || jikan api)
+
+
+
+            // create the results
+            createResults(animeTitle);
+        });
+
+        flowchartChoicesContainerEle.appendChild(spanNode);
+    }
+}
+
+
+
+// create the results
+function createResults(animeTitle) {
+
+    // clear any existing choices first
+    if (flowchartChoicesContainerEle.hasChildNodes()) {
+        while (flowchartChoicesContainerEle.firstChild) {
+            flowchartChoicesContainerEle.removeChild(flowchartChoicesContainerEle.lastChild);
+        }
+    }
+
+
+
+    // change "question" text
+    flowchartQuestionEle.innerHTML = animeTitle;
+
+
+    // create result node
+    var spanNode = document.createElement("span");
+    spanNode.setAttribute("id", "flowchart-result");
+    var spanText = document.createTextNode(animeTitle);
+    spanNode.appendChild(spanText);
+
+
+    flowchartChoicesContainerEle.appendChild(spanNode);
+}
+
+
+
+// get previous node
 function getPreviousIndex(targetIndex) {
     for (var i = 0; i < flowchart.length; i++) {
         // flowchart index
@@ -110,7 +222,7 @@ function getPreviousIndex(targetIndex) {
 
 
 // get question node
-function getQuestionNode(nodeIndex) {
+function getNextNode(nodeIndex) {
     for (var i = 0; i < flowchart.length; i++) {
         if (flowchart[i].head == nodeIndex) {
             return flowchart[i];

@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "sassy": "sass --watch public/style/sass/main.sass:public/style/css/main.css"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
