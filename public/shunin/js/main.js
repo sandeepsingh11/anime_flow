@@ -171,15 +171,18 @@
         textInputNode.setAttribute("type", "text");
         textInputNode.setAttribute("name", "tail-text-" + ++tailEleId);
         textInputNode.setAttribute("id", "tail-text-" + tailEleId);
-
+        textInputNode.setAttribute("class", "tail-text");
+        
         var numInputNode = document.createElement("input");
         numInputNode.setAttribute("type", "number");
         numInputNode.setAttribute("name", "tail-num-" + tailEleId);
         numInputNode.setAttribute("id", "tail-num-" + tailEleId);
+        numInputNode.setAttribute("class", "tail-num");
         
         var spanNode = document.createElement("span");
         spanNode.setAttribute("class", "button");
         spanNode.setAttribute("id", "tail-delete-" + tailEleId);
+        spanNode.setAttribute("class", "tail-delete");
         var spanText = document.createTextNode("-");
         spanNode.appendChild(spanText);
         
@@ -235,6 +238,6 @@
 
 
 
-        tailParent.insertBefore(divNode, tailParent.childNodes[tailParent.childElementCount + 2]);
+        tailParent.insertBefore(divNode, tailParent.childNodes[tailParent.childElementCount + 3]);
     })
 })();

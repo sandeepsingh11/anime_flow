@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "sassy": "sass --watch public/style/sass/main.sass:public/style/css/main.css"
+        "sassy": "sass --watch public/style/sass/main.sass:public/style/css/main.css public/shunin/style/sass/main.sass:public/shunin/style/css/main.css"
     },
     "config": {
         "process-timeout": 0

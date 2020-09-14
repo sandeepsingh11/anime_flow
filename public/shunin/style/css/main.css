@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 20px;
+  line-height: 1;
+}
+
+html {
+  background-color: #F3A257;
+}
+
+select {
+  width: 100%;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  padding: 8px;
+}
+
+input[type=submit] {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+input[type=submit]:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+label {
+  display: block;
+}
+
+.input-container {
+  margin-bottom: 0.5rem;
+}
+
+#form-container {
+  background-color: #F3A257;
+  width: 100vw;
+  height: 100vh;
+}
+
+#form-create {
+  width: 90%;
+  max-width: 330px;
+  margin: auto;
+}
+#form-create .form-title {
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+#form-create .radio-container label {
+  display: inline-block;
+}
+#form-create .radio-container input {
+  margin-left: 1rem;
+}
+#form-create .hint {
+  font-size: 0.85rem;
+}
+#form-create #tails {
+  position: relative;
+}
+#form-create #tails .hint {
+  display: inline-block;
+}
+#form-create #tails #tail-add,
+#form-create #tails .tail-delete {
+  padding: 3px;
+}
+#form-create #tails #tail-add:hover,
+#form-create #tails .tail-delete:hover {
+  cursor: pointer;
+}
+#form-create #tails #tail-add {
+  position: relative;
+  right: -28px;
+}
+#form-create #tails #tail-add:hover {
+  color: green;
+}
+#form-create #tails .tail-text {
+  width: calc(100% - 45px - 7px - 10px - 6px);
+}
+#form-create #tails .tail-num {
+  width: 45px;
+  margin-left: 5px;
+}
+#form-create #tails .tail-delete {
+  margin-left: 5px;
+}
+#form-create #tails .tail-delete:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=main.css.map */

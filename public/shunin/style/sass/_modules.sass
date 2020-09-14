@@ -1,0 +1,57 @@
+#form-create
+    width: 90%
+    max-width: 330px
+    margin: auto
+    
+
+    .form-title
+        margin: 0
+        padding: 1rem 0
+        text-align: center
+
+    .radio-container
+        label
+            display: inline-block
+
+        input
+            margin-left: 1rem
+
+    .hint
+        font-size: 0.85rem
+
+    #tails
+        position: relative
+
+        .hint
+            display: inline-block
+
+
+        #tail-add,
+        .tail-delete
+            padding: 3px
+            
+            &:hover
+                cursor: pointer
+
+
+        #tail-add
+            position: relative
+            right: -28px
+
+            &:hover
+                color: green
+
+        .tail-text
+            // (form width) - (num input w) - ("-" w) - (margin-left w) - ("-" paddings)
+            width: calc(100% - 45px - 7px - 10px - 6px)
+
+        .tail-num
+            width: 45px
+            margin-left: 5px
+
+
+        .tail-delete
+            margin-left: 5px
+
+            &:hover
+                color: red
