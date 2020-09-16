@@ -408,5 +408,664 @@
                 "Eureka Seven","Big O","Code Geass","Gunbuster","Full Metal Panic","Escaflowne","Macrosse"
             ]
         }
+        ,
+		{
+            "head": 13, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "FLCL"
+            ]
+        },
+		{
+            "head": 14, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kill la Kill","Gurren Lagann"
+            ]
+        },
+		{
+            "head": 15, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "No Game No Life"
+            ]
+        },
+		{
+            "head": 16, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Symphogear"
+            ]
+        },
+		{
+            "head": 17, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Shokugeki no Souma"
+            ]
+        },
+		{
+            "head": 18, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Panty & Stocking"
+            ]
+        },
+		{
+            "head": 19, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Samurai Flamenco"
+            ]
+        },
+		{
+            "head": 20, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Highschool of  the Dead"
+            ]
+        },
+		{
+            "head": 21, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Cross Ange"
+            ]
+        },
+		{
+            "head": 22, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "JoJo's Bizzare Adventure"
+            ]
+        },
+		{
+            "head": 2, 
+            "type": "q", 
+            "body": "what kind of comedy?", 
+            "tail": [
+                {
+                    "fur": "daily life",
+                    "tail": 45  
+                },
+                {
+                    "fur": "romance comedy",
+                    "tail": 46  
+                },
+                {
+                    "fur": "parody",
+                    "tail": 47  
+                }
+            ]
+        },
+		{
+            "head": 45, 
+            "type": "q", 
+            "body": "setting?", 
+            "tail": [
+                {
+                    "fur": "school",
+                    "tail": 48  
+                },
+                {
+                    "fur": "work",
+                    "tail": 49  
+                }
+            ]
+        },
+		{
+            "head": 48, 
+            "type": "q", 
+            "body": "about?", 
+            "tail": [
+                {
+                    "fur": "delinquents",
+                    "tail": 50  
+                },
+                {
+                    "fur": "nursing a demon baby",
+                    "tail": 51  
+                },
+                {
+                    "fur": "\"ordinary\" school life",
+                    "tail": 52  
+                },
+                {
+                    "fur": "discount fight club",
+                    "tail": 53  
+                },
+                {
+                    "fur": "boys being boys",
+                    "tail": 54  
+                },
+                {
+                    "fur": "dirty jokes",
+                    "tail": 55  
+                },
+                {
+                    "fur": "teaching",
+                    "tail": 57  
+                },
+                {
+                    "fur": "lighthearted casual comedy with romance and supernatural",
+                    "tail": 56  
+                }
+            ]
+        }
+,
+		{
+            "head": 57, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Sayonara Zetsubou Sensei","Great Teacher Onizuka"
+            ]
+        },
+		{
+            "head": 50, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Great Teacher Onizuka","Cromartie High","Beelzebub"
+            ]
+        },
+		{
+            "head": 51, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Beelzebub"
+            ]
+        },
+		{
+            "head": 52, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Nichijou","Azumanga Daioh","D-Frag!","Harushi Suzumiya"
+            ]
+        },
+		{
+            "head": 53, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Ben-To!"
+            ]
+        },
+		{
+            "head": 54, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Daily Lives of High School Boys"
+            ]
+        },
+		{
+            "head": 55, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Seitokai Yakuindomo","Shimoneta","Prison School"
+            ]
+        },
+		{
+            "head": 56, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Yamada and the Seven Witches","Witch Craft Works"
+            ]
+        },
+		{
+            "head": 49, 
+            "type": "q", 
+            "body": "work at?", 
+            "tail": [
+                {
+                    "fur": "animation studio",
+                    "tail": 58  
+                },
+                {
+                    "fur": "restaurant",
+                    "tail": 59  
+                },
+                {
+                    "fur": "Disneyland",
+                    "tail": 60  
+                },
+                {
+                    "fur": "McDonald's",
+                    "tail": 61  
+                },
+                {
+                    "fur": "teaching",
+                    "tail": 57  
+                }
+            ]
+        },
+		{
+            "head": 58, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Shirobako"
+            ]
+        },
+		{
+            "head": 59, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Working!","Servant x Service"
+            ]
+        },
+		{
+            "head": 60, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Amagi Brilliant Park"
+            ]
+        },
+		{
+            "head": 61, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "The Devil is a Part-Timer"
+            ]
+        },
+		{
+            "head": 57, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Sayonara Zetsubou Sensei","Great Teacher Onizuka"
+            ]
+        },
+		{
+            "head": 46, 
+            "type": "q", 
+            "body": "theme?", 
+            "tail": [
+                {
+                    "fur": "for starters",
+                    "tail": 62  
+                },
+                {
+                    "fur": "anti-romance",
+                    "tail": 63  
+                },
+                {
+                    "fur": "drawing girly manga",
+                    "tail": 64  
+                },
+                {
+                    "fur": "meta-humor",
+                    "tail": 65  
+                },
+                {
+                    "fur": "college-aged cast",
+                    "tail": 66  
+                },
+                {
+                    "fur": "girl-oriented (shoujo)",
+                    "tail": 67  
+                },
+                {
+                    "fur": "sitcom",
+                    "tail": 68  
+                },
+                {
+                    "fur": "harem",
+                    "tail": 69  
+                },
+                {
+                    "fur": "incest",
+                    "tail": 70  
+                },
+                {
+                    "fur": "gay couple",
+                    "tail": 71  
+                },
+                {
+                    "fur": "old classic",
+                    "tail": 72  
+                },
+                {
+                    "fur": "sports",
+                    "tail": 73  
+                },
+                {
+                    "fur": "everybody wins",
+                    "tail": 74  
+                },
+                {
+                    "fur": "delusional supernerds ",
+                    "tail": 75  
+                },
+                {
+                    "fur": "lighthearted casual comedy with romance and supernatural",
+                    "tail": 56  
+                },
+                {
+                    "fur": "slice of life turned drama",
+                    "tail": 76  
+                }
+            ]
+        },
+		{
+            "head": 62, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Toradora!"
+            ]
+        },
+		{
+            "head": 63, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Oregairu"
+            ]
+        },
+		{
+            "head": 64, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Gekkan Shoujo Nozaki-kun"
+            ]
+        },
+		{
+            "head": 65, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Saekano"
+            ]
+        },
+		{
+            "head": 66, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Golden Time"
+            ]
+        },
+		{
+            "head": 67, 
+            "type": "q", 
+            "body": "theme, again lol", 
+            "tail": [
+                {
+                    "fur": "playful love",
+                    "tail": 77  
+                },
+                {
+                    "fur": "reverse harem",
+                    "tail": 78  
+                },
+                {
+                    "fur": "breaking the loner",
+                    "tail": 79  
+                },
+                {
+                    "fur": "tall girl, short boy",
+                    "tail": 80  
+                },
+                {
+                    "fur": "weirdo girl, cool boy",
+                    "tail": 81  
+                },
+                {
+                    "fur": "idols",
+                    "tail": 82  
+                },
+                {
+                    "fur": "gentle giant",
+                    "tail": 83  
+                },
+                {
+                    "fur": "\"too busy for romance\"",
+                    "tail": 84  
+                },
+                {
+                    "fur": "fine arts students",
+                    "tail": 85  
+                },
+                {
+                    "fur": "life as a shrine deity",
+                    "tail": 86  
+                }
+            ]
+        },
+		{
+            "head": 77, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Maid-Sama"
+            ]
+        },
+		{
+            "head": 78, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Ouran Koukou Host Club","Fruits Basket"
+            ]
+        },
+		{
+            "head": 79, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "The Wallflower"
+            ]
+        },
+		{
+            "head": 80, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Lovely Complex"
+            ]
+        },
+		{
+            "head": 81, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kimi Ni Todoke"
+            ]
+        },
+		{
+            "head": 82, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Skip Beat!"
+            ]
+        },
+		{
+            "head": 83, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Ore Monogatari"
+            ]
+        },
+		{
+            "head": 84, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "My Little Monster"
+            ]
+        },
+		{
+            "head": 85, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Honey and Clover"
+            ]
+        },
+		{
+            "head": 86, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kamisama Kiss"
+            ]
+        },
+		{
+            "head": 68, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "School Rumble","Baka to Test","B Gata H Kei"
+            ]
+        },
+		{
+            "head": 69, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Nise Koi","Shuffle!","Highschool DxD"
+            ]
+        },
+		{
+            "head": 70, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "OreImo","Kiss x Sis"
+            ]
+        },
+		{
+            "head": 71, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Junjou Romantica","Sakura Trick"
+            ]
+        },
+		{
+            "head": 72, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Maison Ikkoku","Romeo no Aoi Sora"
+            ]
+        },
+		{
+            "head": 73, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Cross Game"
+            ]
+        },
+		{
+            "head": 74, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Amagami SS"
+            ]
+        },
+		{
+            "head": 75, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Chuunibyou"
+            ]
+        },
+		{
+            "head": 56, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Yamada and the Seven Witches","Witch Craft Works"
+            ]
+        },
+		{
+            "head": 76, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kokoro Connect"
+            ]
+        },
+		{
+            "head": 47, 
+            "type": "q", 
+            "body": "making fun of:", 
+            "tail": [
+                {
+                    "fur": "anime cliches",
+                    "tail": 87  
+                },
+                {
+                    "fur": "action series",
+                    "tail": 88  
+                },
+                {
+                    "fur": "romance comedies",
+                    "tail": 89  
+                },
+                {
+                    "fur": "society",
+                    "tail": 90  
+                }
+            ]
+        },
+		{
+            "head": 87, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "The Melancholy of Haruhi Suzumiya","Lucky Star","Binbougami ga!"
+            ]
+        },
+		{
+            "head": 88, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Gintama","Kill la Kill","Samurai Flamenco"
+            ]
+        },
+		{
+            "head": 89, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Gekkan Shoujo Nozaki-kun","Saekano","The World God Only Knows"
+            ]
+        },
+		{
+            "head": 90, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Humanity Has Declined"
+            ]
+        }
     ]
 } 
