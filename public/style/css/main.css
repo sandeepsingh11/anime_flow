@@ -3,6 +3,7 @@
 }
 
 :root {
+  background-color: #F3A257;
   font-size: 22px;
   line-height: 1.5;
 }
@@ -50,7 +51,15 @@
   left: 5px;
 }
 #flowchart-wrapper #flowchart-back-container #flowchart-back {
+  display: block;
   font-weight: 700;
+}
+#flowchart-wrapper #flowchart-back-container #flowchart-back #back {
+  padding: 0.3rem;
+}
+#flowchart-wrapper #flowchart-back-container #flowchart-back #back:hover {
+  cursor: pointer;
+  color: salmon;
 }
 
 /*# sourceMappingURL=main.css.map */

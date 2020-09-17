@@ -24,7 +24,9 @@
 
                 <!-- previous question -->
                 <div id="flowchart-back-container">
-                    <span id="flowchart-back"><--</span>
+                    <span id="flowchart-back">
+                        <img src="./assets/chevron-left.svg" alt="back arrow" id="back">
+                    </span>
                 </div>
             </div>
         </div>

@@ -30,7 +30,7 @@ var previousNodeIndex = -1;
 
 var flowchartQuestionEle = document.getElementById("flowchart-question");
 var flowchartChoicesContainerEle = document.getElementById("flowchart-choices-container");
-var flowchartBackEle = document.getElementById("flowchart-back");
+var flowchartBackEle = document.getElementById("back");
 
 // previous question logic
 flowchartBackEle.addEventListener("click", function() {
