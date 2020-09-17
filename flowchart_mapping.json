@@ -1565,6 +1565,426 @@
             "tail": [
                 "Clannad"
             ]
+        },
+		{
+            "head": 5, 
+            "type": "q", 
+            "body": "genre?", 
+            "tail": [
+                {
+                    "fur": "romance",
+                    "tail": 132  
+                },
+                {
+                    "fur": "fantasy",
+                    "tail": 133  
+                },
+                {
+                    "fur": "post-apocalyptic rural dystopia",
+                    "tail": 134  
+                },
+                {
+                    "fur": "science fiction",
+                    "tail": 135  
+                },
+                {
+                    "fur": "time travel",
+                    "tail": 136  
+                },
+                {
+                    "fur": "psychological",
+                    "tail": 137  
+                }
+            ]
+        },
+		{
+            "head": 132, 
+            "type": "q", 
+            "body": "theme?", 
+            "tail": [
+                {
+                    "fur": "mystery (supernatural)",
+                    "tail": 138  
+                },
+                {
+                    "fur": "fantasy",
+                    "tail": 139  
+                },
+                {
+                    "fur": "1980 classic",
+                    "tail": 140  
+                },
+                {
+                    "fur": "comedy-drama with musicians ",
+                    "tail": 141  
+                },
+                {
+                    "fur": "swan lake magical girl",
+                    "tail": 142  
+                },
+                {
+                    "fur": "love triangle",
+                    "tail": 143  
+                },
+                {
+                    "fur": "incest",
+                    "tail": 144  
+                },
+                {
+                    "fur": "homosexuality",
+                    "tail": 145  
+                },
+                {
+                    "fur": "adult life struggle",
+                    "tail": 146  
+                },
+                {
+                    "fur": "realism",
+                    "tail": 147  
+                }
+            ]
+        },
+		{
+            "head": 138, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Bakemonogatari"
+            ]
+        },
+		{
+            "head": 139, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Nagi no Asukara"
+            ]
+        },
+		{
+            "head": 140, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Rose of Versailes"
+            ]
+        },
+		{
+            "head": 141, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Nodame Cantabile","Nana"
+            ]
+        },
+		{
+            "head": 142, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Princess Tutu"
+            ]
+        },
+		{
+            "head": 143, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "ef: A Tale of Memories","True Tears","Touch","White Album 2","School Days"
+            ]
+        },
+		{
+            "head": 144, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Koi Kaze","Yosuga no Sora"
+            ]
+        },
+		{
+            "head": 145, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Onii-sama e"
+            ]
+        },
+		{
+            "head": 146, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Rec"
+            ]
+        },
+		{
+            "head": 147, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Aku no Hana"
+            ]
+        },
+		{
+            "head": 133, 
+            "type": "q", 
+            "body": "action-packed?", 
+            "tail": [
+                {
+                    "fur": "yes",
+                    "tail": 148  
+                },
+                {
+                    "fur": "no",
+                    "tail": 149  
+                }
+            ]
+        },
+		{
+            "head": 148, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Seirei no Moribito","The Twelve Kingdoms"
+            ]
+        },
+		{
+            "head": 149, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Beast Player Erin"
+            ]
+        },
+		{
+            "head": 134, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Shinsekai Yori"
+            ]
+        },
+		{
+            "head": 135, 
+            "type": "q", 
+            "body": "type?", 
+            "tail": [
+                {
+                    "fur": "existential",
+                    "tail": 150  
+                },
+                {
+                    "fur": "realistic",
+                    "tail": 151  
+                },
+                {
+                    "fur": "action",
+                    "tail": 152  
+                },
+                {
+                    "fur": "space opera",
+                    "tail": 153  
+                }
+            ]
+        },
+		{
+            "head": 150, 
+            "type": "q", 
+            "body": "theme?", 
+            "tail": [
+                {
+                    "fur": "cyberpunk",
+                    "tail": 154  
+                },
+                {
+                    "fur": "romance",
+                    "tail": 155  
+                },
+                {
+                    "fur": "mystery",
+                    "tail": 156  
+                }
+            ]
+        },
+		{
+            "head": 154, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Ghost in the Shell: Stand Alone Complex","Texhnolyze"
+            ]
+        },
+		{
+            "head": 155, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kaiba"
+            ]
+        },
+		{
+            "head": 156, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Ergo Proxy","Serial Experiments Lain"
+            ]
+        },
+		{
+            "head": 151, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Planetes"
+            ]
+        },
+		{
+            "head": 152, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Wolf's Rain"
+            ]
+        },
+		{
+            "head": 153, 
+            "type": "q", 
+            "body": "how epic?", 
+            "tail": [
+                {
+                    "fur": "starfleet",
+                    "tail": 157  
+                },
+                {
+                    "fur": "starship",
+                    "tail": 158  
+                }
+            ]
+        },
+		{
+            "head": 157, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Legend of the Galactic Heroes"
+            ]
+        },
+		{
+            "head": 158, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Space Battleship Yamato 2199"
+            ]
+        },
+		{
+            "head": 136, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Now and Then, Here and There"
+            ]
+        },
+		{
+            "head": 137, 
+            "type": "q", 
+            "body": "theme?", 
+            "tail": [
+                {
+                    "fur": "reflection on life choices",
+                    "tail": 159  
+                },
+                {
+                    "fur": "supernatural",
+                    "tail": 160  
+                },
+                {
+                    "fur": "game of souls",
+                    "tail": 161  
+                },
+                {
+                    "fur": "artsy wild ride",
+                    "tail": 162  
+                },
+                {
+                    "fur": "cyberpunk",
+                    "tail": 154  
+                },
+                {
+                    "fur": "romance",
+                    "tail": 155  
+                },
+                {
+                    "fur": "mystery",
+                    "tail": 156  
+                }
+            ]
+        },
+		{
+            "head": 159, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Tatami Galaxy"
+            ]
+        },
+		{
+            "head": 160, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "xxxHOLIC","Ghost Hound"
+            ]
+        },
+		{
+            "head": 161, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Death Parade"
+            ]
+        },
+		{
+            "head": 162, 
+            "type": "q", 
+            "body": "hop in:", 
+            "tail": [
+                {
+                    "fur": "gender-bending feminist classic",
+                    "tail": 163  
+                },
+                {
+                    "fur": "mystery overloaded with symbolism",
+                    "tail": 164  
+                },
+                {
+                    "fur": "lesbian bear storm",
+                    "tail": 165  
+                }
+            ]
+        },
+		{
+            "head": 163, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Revolutionary Girl Utena"
+            ]
+        },
+		{
+            "head": 164, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Mawaru Penguindrum"
+            ]
+        },
+		{
+            "head": 165, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Yuri Kuma Arashi"
+            ]
         }
     ]
 } 
