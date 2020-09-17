@@ -1066,6 +1066,505 @@
             "tail": [
                 "Humanity Has Declined"
             ]
+        },
+		{
+            "head": 3, 
+            "type": "q", 
+            "body": "chill with who?", 
+            "tail": [
+                {
+                    "fur": "random people",
+                    "tail": 91  
+                },
+                {
+                    "fur": "cute girls doing cute things",
+                    "tail": 92  
+                },
+                {
+                    "fur": "Jesus and Buddha",
+                    "tail": 93  
+                }
+            ]
+        },
+		{
+            "head": 91, 
+            "type": "q", 
+            "body": "setting?", 
+            "tail": [
+                {
+                    "fur": "at work",
+                    "tail": 94  
+                },
+                {
+                    "fur": "school friends drawing manga",
+                    "tail": 95  
+                },
+                {
+                    "fur": "school mystery club",
+                    "tail": 96  
+                },
+                {
+                    "fur": "road trip adventure",
+                    "tail": 97  
+                },
+                {
+                    "fur": "adult women",
+                    "tail": 98  
+                }
+            ]
+        },
+		{
+            "head": 94, 
+            "type": "q", 
+            "body": "where?", 
+            "tail": [
+                {
+                    "fur": "idyllic Venice",
+                    "tail": 99  
+                },
+                {
+                    "fur": "life in a band",
+                    "tail": 100  
+                },
+                {
+                    "fur": "rural japan",
+                    "tail": 101  
+                },
+                {
+                    "fur": "shopping alley",
+                    "tail": 102  
+                },
+                {
+                    "fur": "spirit hunting",
+                    "tail": 103  
+                },
+                {
+                    "fur": "astronauts",
+                    "tail": 104  
+                }
+            ]
+        },
+		{
+            "head": 99, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Aria"
+            ]
+        },
+		{
+            "head": 100, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Beck","Hibike! Euphonium"
+            ]
+        },
+		{
+            "head": 101, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Barakamon"
+            ]
+        },
+		{
+            "head": 102, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Tamako Market"
+            ]
+        },
+		{
+            "head": 103, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kyoukai no Kanata"
+            ]
+        },
+		{
+            "head": 104, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Space Brothers"
+            ]
+        },
+		{
+            "head": 95, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Bakuman"
+            ]
+        },
+		{
+            "head": 96, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Hyouka"
+            ]
+        },
+		{
+            "head": 98, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Princess Jellyfish"
+            ]
+        },
+		{
+            "head": 97, 
+            "type": "q", 
+            "body": "road trip through?", 
+            "tail": [
+                {
+                    "fur": "medieval Europe and its economy",
+                    "tail": 105  
+                },
+                {
+                    "fur": "rural Japan and spirit stuff",
+                    "tail": 106  
+                },
+                {
+                    "fur": "philosophy and a talking motorcycle",
+                    "tail": 107  
+                }
+            ]
+        },
+		{
+            "head": 105, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Spice & Wolf"
+            ]
+        },
+		{
+            "head": 106, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Mushishi"
+            ]
+        },
+		{
+            "head": 107, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kino's Journey"
+            ]
+        },
+		{
+            "head": 93, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Saint Oniisan"
+            ]
+        },
+		{
+            "head": 92, 
+            "type": "q", 
+            "body": "what's cute?", 
+            "tail": [
+                {
+                    "fur": "wannabe popstars",
+                    "tail": 108  
+                },
+                {
+                    "fur": "life away from city",
+                    "tail": 109  
+                },
+                {
+                    "fur": "tank drifting",
+                    "tail": 110  
+                },
+                {
+                    "fur": "cute PTSD",
+                    "tail": 111  
+                }
+            ]
+        },
+		{
+            "head": 108, 
+            "type": "q", 
+            "body": "pro or amateur?", 
+            "tail": [
+                {
+                    "fur": "big stage",
+                    "tail": 112  
+                },
+                {
+                    "fur": "school club",
+                    "tail": 113  
+                }
+            ]
+        },
+		{
+            "head": 112, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "The iDolM@ster","Aikatsu!"
+            ]
+        },
+		{
+            "head": 113, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Love Life!","K-On!"
+            ]
+        },
+		{
+            "head": 109, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Non Non Biyori"
+            ]
+        },
+		{
+            "head": 110, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Girls & Panzer"
+            ]
+        },
+		{
+            "head": 111, 
+            "type": "q", 
+            "body": "serving as?", 
+            "tail": [
+                {
+                    "fur": "magical girls",
+                    "tail": 114  
+                },
+                {
+                    "fur": "soldiers",
+                    "tail": 115  
+                }
+            ]
+        },
+		{
+            "head": 114, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Yuuki Yuuna is a Hero"
+            ]
+        },
+		{
+            "head": 115, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "So Ra Wo No To"
+            ]
+        },
+		{
+            "head": 4, 
+            "type": "q", 
+            "body": "feel how?", 
+            "tail": [
+                {
+                    "fur": "cute PTSD",
+                    "tail": 111  
+                },
+                {
+                    "fur": "warm and bittersweet",
+                    "tail": 116  
+                },
+                {
+                    "fur": "heavy cringe",
+                    "tail": 117  
+                },
+                {
+                    "fur": "I've got tissues",
+                    "tail": 118  
+                }
+            ]
+        },
+		{
+            "head": 116, 
+            "type": "q", 
+            "body": "premise?", 
+            "tail": [
+                {
+                    "fur": "unexpected child",
+                    "tail": 119  
+                },
+                {
+                    "fur": "unexpected relocation",
+                    "tail": 120  
+                },
+                {
+                    "fur": "talent vs hard work",
+                    "tail": 121  
+                }
+            ]
+        },
+		{
+            "head": 119, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Usagi Drop"
+            ]
+        },
+		{
+            "head": 120, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Hanasaku Iroha"
+            ]
+        },
+		{
+            "head": 121, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Sakurasou no Pet na Kanojo"
+            ]
+        },
+		{
+            "head": 117, 
+            "type": "q", 
+            "body": "the \"hero\"?", 
+            "tail": [
+                {
+                    "fur": "awkward teenage girl",
+                    "tail": 122  
+                },
+                {
+                    "fur": "shut-in loser",
+                    "tail": 123  
+                }
+            ]
+        },
+		{
+            "head": 122, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Watamote"
+            ]
+        },
+		{
+            "head": 123, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Welcome to NHK!"
+            ]
+        },
+		{
+            "head": 118, 
+            "type": "q", 
+            "body": "feels?", 
+            "tail": [
+                {
+                    "fur": "and laughs",
+                    "tail": 124  
+                },
+                {
+                    "fur": "overcoming grief",
+                    "tail": 125  
+                },
+                {
+                    "fur": "hardships of life and death",
+                    "tail": 126  
+                }
+            ]
+        },
+		{
+            "head": 124, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Angel Beats!","Charlotte"
+            ]
+        },
+		{
+            "head": 125, 
+            "type": "q", 
+            "body": "group relationships or individual developments?", 
+            "tail": [
+                {
+                    "fur": "kids and a childhood friend",
+                    "tail": 127  
+                },
+                {
+                    "fur": "young pianist and his mother",
+                    "tail": 128  
+                }
+            ]
+        },
+		{
+            "head": 127, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "anohana: The Flower We Saw that Day"
+            ]
+        },
+		{
+            "head": 128, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Your Lie in April"
+            ]
+        },
+		{
+            "head": 126, 
+            "type": "q", 
+            "body": "are you patient?", 
+            "tail": [
+                {
+                    "fur": "nope",
+                    "tail": 129  
+                },
+                {
+                    "fur": "just make it short",
+                    "tail": 130  
+                },
+                {
+                    "fur": "bring it on",
+                    "tail": 131  
+                }
+            ]
+        },
+		{
+            "head": 129, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Natsume's Book of Friends"
+            ]
+        },
+		{
+            "head": 130, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Haibane Renmei"
+            ]
+        },
+		{
+            "head": 131, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Clannad"
+            ]
         }
     ]
 } 
