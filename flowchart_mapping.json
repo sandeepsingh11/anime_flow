@@ -1985,6 +1985,410 @@
             "tail": [
                 "Yuri Kuma Arashi"
             ]
+        },
+		{
+            "head": 7, 
+            "type": "q", 
+            "body": "what's scary?", 
+            "tail": [
+                {
+                    "fur": "vampires",
+                    "tail": 166  
+                },
+                {
+                    "fur": "vampires with guns",
+                    "tail": 167  
+                },
+                {
+                    "fur": "aliens",
+                    "tail": 168  
+                },
+                {
+                    "fur": "mystery",
+                    "tail": 169  
+                },
+                {
+                    "fur": "sci-fi",
+                    "tail": 170  
+                },
+                {
+                    "fur": "ghosts",
+                    "tail": 171  
+                },
+                {
+                    "fur": "superpowers",
+                    "tail": 172  
+                },
+                {
+                    "fur": "war against the undead",
+                    "tail": 173  
+                },
+                {
+                    "fur": "the ring",
+                    "tail": 174  
+                },
+                {
+                    "fur": "demons",
+                    "tail": 175  
+                },
+                {
+                    "fur": "people are",
+                    "tail": 176  
+                }
+            ]
+        },
+		{
+            "head": 166, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Shiki","Blood+"
+            ]
+        },
+		{
+            "head": 167, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Hellsing Ultimate"
+            ]
+        },
+		{
+            "head": 168, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Parasyte"
+            ]
+        },
+		{
+            "head": 169, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Another","Higurashi"
+            ]
+        },
+		{
+            "head": 170, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Deadman Wonderland"
+            ]
+        },
+		{
+            "head": 171, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Ghost Hunt","Dusk Maiden of Amnesia"
+            ]
+        },
+		{
+            "head": 172, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Elfen Lied","Shinsekai Yori"
+            ]
+        },
+		{
+            "head": 173, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Tokyo Ghoul"
+            ]
+        },
+		{
+            "head": 174, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Jigoku Shoujo"
+            ]
+        },
+		{
+            "head": 175, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Mononoke","Ayakashi"
+            ]
+        },
+		{
+            "head": 176, 
+            "type": "q", 
+            "body": "setting?", 
+            "tail": [
+                {
+                    "fur": "Germany",
+                    "tail": 177  
+                },
+                {
+                    "fur": "dark fantasy",
+                    "tail": 178  
+                }
+            ]
+        },
+		{
+            "head": 177, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Monster"
+            ]
+        },
+		{
+            "head": 178, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Berserk"
+            ]
+        },
+		{
+            "head": 6, 
+            "type": "q", 
+            "body": "what kind of thriller?", 
+            "tail": [
+                {
+                    "fur": "crime drama",
+                    "tail": 179  
+                },
+                {
+                    "fur": "science fiction",
+                    "tail": 180  
+                },
+                {
+                    "fur": "Hunger Games",
+                    "tail": 181  
+                },
+                {
+                    "fur": "gambling",
+                    "tail": 182  
+                },
+                {
+                    "fur": "proper drama",
+                    "tail": 183  
+                },
+                {
+                    "fur": "I'm ready",
+                    "tail": 184  
+                }
+            ]
+        },
+		{
+            "head": 179, 
+            "type": "q", 
+            "body": "with?", 
+            "tail": [
+                {
+                    "fur": "psychology of the sociopath",
+                    "tail": 185  
+                },
+                {
+                    "fur": "surreal investigation",
+                    "tail": 186  
+                },
+                {
+                    "fur": "grim reaper",
+                    "tail": 187  
+                },
+                {
+                    "fur": "terrorists",
+                    "tail": 188  
+                },
+                {
+                    "fur": "unusual timeline composition",
+                    "tail": 189  
+                }
+            ]
+        },
+		{
+            "head": 185, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Monster"
+            ]
+        },
+		{
+            "head": 186, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Paranoia Agent","Millennium Actress"
+            ]
+        },
+		{
+            "head": 187, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Death Note"
+            ]
+        },
+		{
+            "head": 188, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Zankyou no Terror","Eden of the East"
+            ]
+        },
+		{
+            "head": 189, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kara no Kyoukai"
+            ]
+        },
+		{
+            "head": 180, 
+            "type": "q", 
+            "body": "contemporary or futuristic?", 
+            "tail": [
+                {
+                    "fur": "time travel experiment",
+                    "tail": 190  
+                },
+                {
+                    "fur": "cyberpunk police",
+                    "tail": 191  
+                }
+            ]
+        },
+		{
+            "head": 190, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Steins;Gate"
+            ]
+        },
+		{
+            "head": 191, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Psycho-Pass"
+            ]
+        },
+		{
+            "head": 181, 
+            "type": "q", 
+            "body": "with the support of?", 
+            "tail": [
+                {
+                    "fur": "bombs",
+                    "tail": 192  
+                },
+                {
+                    "fur": "overly attached girlfriend 2.0",
+                    "tail": 193  
+                },
+                {
+                    "fur": "legendary heroes",
+                    "tail": 194  
+                }
+            ]
+        },
+		{
+            "head": 192, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Btooom!"
+            ]
+        },
+		{
+            "head": 193, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Mirai Nikki"
+            ]
+        },
+		{
+            "head": 194, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Fate/Zero"
+            ]
+        },
+		{
+            "head": 182, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Kaiji","Akegi"
+            ]
+        },
+		{
+            "head": 183, 
+            "type": "q", 
+            "body": "premise?", 
+            "tail": [
+                {
+                    "fur": "Count of Monte Cristo",
+                    "tail": 195  
+                },
+                {
+                    "fur": "juvenile detention center in the '50s",
+                    "tail": 196  
+                }
+            ]
+        },
+		{
+            "head": 195, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Gankutsuou"
+            ]
+        },
+		{
+            "head": 196, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Rainbow"
+            ]
+        },
+		{
+            "head": 184, 
+            "type": "q", 
+            "body": "no you're not", 
+            "tail": [
+                {
+                    "fur": "mechas",
+                    "tail": 197  
+                },
+                {
+                    "fur": "magical girls",
+                    "tail": 198  
+                }
+            ]
+        },
+		{
+            "head": 197, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Neon Genesis Evangelion"
+            ]
+        },
+		{
+            "head": 198, 
+            "type": "a", 
+            "body": "", 
+            "tail": [
+                "Puella Magi Madoka Magica"
+            ]
         }
     ]
 } 
