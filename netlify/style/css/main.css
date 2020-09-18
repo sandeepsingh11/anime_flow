@@ -45,6 +45,20 @@
   width: 85%;
   margin: 3rem auto 1rem;
 }
+#flowchart-wrapper #flowchart-choices-container .anime {
+  width: 250px;
+  margin: 0.5rem;
+}
+#flowchart-wrapper #flowchart-choices-container .anime .anime-image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#flowchart-wrapper #flowchart-choices-container .anime .anime-title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
 #flowchart-wrapper #flowchart-back-container {
   position: absolute;
   top: 50%;

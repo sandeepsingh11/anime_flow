@@ -160,10 +160,6 @@ function createAnswers(answerNode) {
 
 
 
-            // get anime info (offline db || jikan api)
-
-
-
             // create the results
             createResults(animeTitle);
         });
@@ -184,20 +180,13 @@ function createResults(animeTitle) {
         }
     }
 
+    // get and display anime data
+    jikanGetAnime(animeTitle);
+
 
 
     // change "question" text
     flowchartQuestionEle.innerHTML = animeTitle;
-
-
-    // create result node
-    var spanNode = document.createElement("span");
-    spanNode.setAttribute("id", "flowchart-result");
-    var spanText = document.createTextNode(animeTitle);
-    spanNode.appendChild(spanText);
-
-
-    flowchartChoicesContainerEle.appendChild(spanNode);
 }
 
 
@@ -239,23 +228,60 @@ function getNextNode(nodeIndex) {
 
 
 
-// test api
-var testEle = document.getElementById("test");
-var dataEle = document.getElementById("data");
-var imgEle = document.getElementById("data-img");
 
-testEle.addEventListener("click", function(e) {
-    fetch("https://api.jikan.moe/v3/search/anime?q=naruto&type=tv&limit=3")
+
+// https://jikan.moe/
+// Jikan API - search / get anime data
+function jikanGetAnime(animeTitle) {
+
+    // https://jikan.docs.apiary.io/#reference/0/search
+    fetch(`https://api.jikan.moe/v3/search/anime?q=${animeTitle}&type=tv&limit=3`)
     .then(function (response) {
         return response.json();
     })
     .then(function (result) {
         console.log(result);
 
-        // for (var i = 0; i < result.results.length; i++) {
-        //     dataEle.innerHTML = result.results[i];
-        // }
-        dataEle.innerHTML = result.results[0].title;
-        imgEle.setAttribute("src", result.results[0].image_url);
+        // create anime node(s)
+        for (var i = 0; i < result.results.length; i++) {
+            // anime container
+            var animeNode = document.createElement("div");
+            animeNode.setAttribute("class", "anime");
+
+
+
+            // anchor and img nodes
+            var anchorNode = document.createElement("a");
+            anchorNode.setAttribute("href", result.results[i].url);
+            anchorNode.setAttribute("target", "_blank");
+            // target="_blank" vulnerability:
+            // https://www.instagram.com/p/CDgmaJZoJcD/?igshid=1w6yamh3yyxbb
+            anchorNode.setAttribute("rel", "noopener noreferrer");
+            anchorNode.setAttribute("class", "anime-link");
+            
+            var imgNode = document.createElement("img");
+            imgNode.setAttribute("src", result.results[i].image_url);
+            imgNode.setAttribute("alt", `image of ${animeTitle}`);
+            imgNode.setAttribute("class", "anime-image");
+            
+            anchorNode.appendChild(imgNode);
+
+
+
+            // h3 node
+            var h3Node = document.createElement("h3");
+            h3Node.setAttribute("class", "anime-title");
+            var h3Text = document.createTextNode(result.results[i].title);
+            h3Node.appendChild(h3Text);
+            
+
+
+
+
+            animeNode.appendChild(anchorNode);
+            animeNode.appendChild(h3Node);
+
+            flowchartChoicesContainerEle.append(animeNode);
+        }
     })
-});
+}
