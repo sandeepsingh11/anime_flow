@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: #F3A257;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flowchart-choice {
+  background-color: transparent;
+  margin: 0.5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.flowchart-choice:hover {
+  cursor: pointer;
+  background-color: salmon;
+}
+
+#flowchart-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #F3A257;
+}
+
+#flowchart-wrapper #flowchart-question-container #flowchart-question {
+  display: block;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+#flowchart-wrapper #flowchart-choices-container {
+  justify-content: center;
+  width: 85%;
+  margin: 3rem auto 1rem;
+}
+#flowchart-wrapper #flowchart-back-container {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+}
+#flowchart-wrapper #flowchart-back-container #flowchart-back {
+  display: block;
+  font-weight: 700;
+}
+#flowchart-wrapper #flowchart-back-container #flowchart-back #back {
+  padding: 0.3rem;
+}
+#flowchart-wrapper #flowchart-back-container #flowchart-back #back:hover {
+  cursor: pointer;
+  color: salmon;
+}
+
+/*# sourceMappingURL=main.css.map */
