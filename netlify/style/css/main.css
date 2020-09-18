@@ -5,7 +5,6 @@
 :root {
   background-color: #F3A257;
   font-size: 22px;
-  line-height: 1.5;
 }
 
 .flex {
@@ -29,6 +28,7 @@
 
 #flowchart-container {
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
   position: relative;
   background-color: #F3A257;
@@ -43,7 +43,7 @@
 #flowchart-wrapper #flowchart-choices-container {
   justify-content: center;
   width: 85%;
-  margin: 3rem auto 1rem;
+  margin: 2rem auto 1rem;
 }
 #flowchart-wrapper #flowchart-choices-container .anime {
   width: 250px;
@@ -57,7 +57,7 @@
 }
 #flowchart-wrapper #flowchart-choices-container .anime .anime-title {
   font-size: 1rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem auto;
 }
 #flowchart-wrapper #flowchart-back-container {
   position: absolute;

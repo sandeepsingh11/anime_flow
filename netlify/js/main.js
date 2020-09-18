@@ -235,7 +235,7 @@ function getNextNode(nodeIndex) {
 function jikanGetAnime(animeTitle) {
 
     // https://jikan.docs.apiary.io/#reference/0/search
-    fetch(`https://api.jikan.moe/v3/search/anime?q=${animeTitle}&type=tv&limit=3`)
+    fetch(`https://api.jikan.moe/v3/search/anime?q=${animeTitle}&limit=3`)
     .then(function (response) {
         return response.json();
     })
