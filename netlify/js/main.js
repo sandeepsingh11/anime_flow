@@ -1,6 +1,3 @@
-// console.log("here");
-
-
 // read flowchart_mapping json
 var flowchart;
 var xmlhttp = new XMLHttpRequest();
@@ -234,13 +231,28 @@ function getNextNode(nodeIndex) {
 // Jikan API - search / get anime data
 function jikanGetAnime(animeTitle) {
 
+    // start "loading" animation
+    var spinDivNode = document.createElement("div");
+    spinDivNode.setAttribute("class", "spinner");
+
+    flowchartChoicesContainerEle.append(spinDivNode);
+
+
     // https://jikan.docs.apiary.io/#reference/0/search
     fetch(`https://api.jikan.moe/v3/search/anime?q=${animeTitle}&limit=3`)
     .then(function (response) {
         return response.json();
     })
     .then(function (result) {
-        console.log(result);
+
+        // clear any existing choices first
+        if (flowchartChoicesContainerEle.hasChildNodes()) {
+            while (flowchartChoicesContainerEle.firstChild) {
+                flowchartChoicesContainerEle.removeChild(flowchartChoicesContainerEle.lastChild);
+            }
+        }
+
+
 
         // create anime node(s)
         for (var i = 0; i < result.results.length; i++) {
