@@ -7,6 +7,11 @@
   font-size: 22px;
 }
 
+@media only screen and (max-width: 430px) {
+  :root {
+    font-size: 20px;
+  }
+}
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -35,13 +40,13 @@
 }
 
 #flowchart-wrapper .spinner {
-  content: "";
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
+  border: 8px solid whitesmoke;
   border-top: 8px solid black;
   border-radius: 50%;
   animation-name: spin;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -53,16 +58,20 @@
     transform: rotate(360deg);
   }
 }
+#flowchart-wrapper #flowchart-question-container {
+  padding: 5vh 0;
+}
 #flowchart-wrapper #flowchart-question-container #flowchart-question {
   display: block;
-  padding: 2rem 0;
   text-align: center;
   font-size: 2rem;
 }
 #flowchart-wrapper #flowchart-choices-container {
   justify-content: center;
+  align-content: center;
   width: 85%;
-  margin: 2rem auto 1rem;
+  height: calc(100vh - 10vh - 2rem - 1.15rem);
+  margin: 0 auto;
 }
 #flowchart-wrapper #flowchart-choices-container .anime {
   width: 250px;
@@ -93,6 +102,21 @@
 #flowchart-wrapper #flowchart-back-container #flowchart-back #back:hover {
   cursor: pointer;
   color: salmon;
+}
+
+@media only screen and (max-width: 430px) {
+  #flowchart-wrapper #flowchart-question-container {
+    padding: 1rem 10px;
+  }
+  #flowchart-wrapper #flowchart-choices-container {
+    height: 100%;
+  }
+  #flowchart-wrapper #flowchart-back-container {
+    left: -6px;
+  }
+  #flowchart-wrapper #flowchart-back-container #flowchart-back #back {
+    padding: 0.5rem 0.25rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,13 +1,13 @@
 #flowchart-wrapper
 
     .spinner
-        content: ''
-        width: 200px
-        height: 200px
+        width: 120px
+        height: 120px
+        border: 8px solid whitesmoke
         border-top: 8px solid black
         border-radius: 50%
         animation-name: spin
-        animation-duration: 1s
+        animation-duration: 1.5s
         animation-iteration-count: infinite
         animation-timing-function: linear
 
@@ -17,18 +17,23 @@
             to
                 transform: rotate(360deg)
 
+
     #flowchart-question-container
+        padding: 5vh 0
+
         #flowchart-question
             display: block
-            padding: 2rem 0
             text-align: center
             font-size: 2rem
 
 
     #flowchart-choices-container
         justify-content: center
+        align-content: center
         width: 85%
-        margin: 2rem auto 1rem
+        // view height - #flowchart-question-contaienr padding - font-size - line-height
+        height: calc(100vh - 10vh - 2rem - 1.15rem)
+        margin: 0 auto
 
 
         .anime
@@ -63,3 +68,29 @@
                 &:hover
                     cursor: pointer
                     color: salmon
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: $mobile-screen)
+    #flowchart-wrapper
+
+        #flowchart-question-container
+            padding: 1rem 10px
+
+        #flowchart-choices-container
+            height: 100%
+
+        
+        #flowchart-back-container
+            left: -6px
+            
+            #flowchart-back
+                #back
+                    padding: 0.5rem 0.25rem
