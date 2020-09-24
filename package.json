@@ -1,0 +1,34 @@
+{
+  "name": "anime_flow",
+  "version": "1.0.0",
+  "description": "Discover anime via a flowchart",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeepsingh11/anime_finder.git"
+  },
+  "author": "Sandeep S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeepsingh11/anime_finder/issues"
+  },
+  "homepage": "https://github.com/sandeepsingh11/anime_finder#readme",
+  "devDependencies": {
+    "@lodder/grunt-postcss": "^2.0.4",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "grunt": "^1.3.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-terser": "^1.0.0",
+    "pixrem": "^5.0.0",
+    "postcss": "^8.0.6",
+    "ruby": "^0.6.1"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
