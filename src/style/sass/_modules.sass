@@ -30,10 +30,9 @@
     #flowchart-choices-container
         justify-content: center
         align-content: center
-        width: 85%
         // view height - #flowchart-question-contaienr padding - font-size - line-height
         height: calc(100vh - 10vh - 2rem - 1.15rem)
-        margin: 0 auto
+        padding: 1rem 32px // 32px for the "back" svg
 
 
         .anime
@@ -52,18 +51,24 @@
     
 
     #flowchart-back-container
-        position: absolute
-        top: 50%
-        left: 5px
+        position: fixed
+        top: 0
+        left: 0
+        height: 100%
+
+        &:hover
+            cursor: pointer
         
 
         #flowchart-back
             display: block
+            position: relative
+            top: 50%
             font-weight: 700
 
             #back
                 // icon from https://ikonate.com/
-                padding: 0.30rem
+                // padding: 0.30rem
 
                 &:hover
                     cursor: pointer
@@ -78,14 +83,28 @@
 
 
 
+// tablet
+@media only screen and (max-width: $tablet-screen)
+    #flowchart-wrapper
+
+        #flowchart-choices-container
+            height: 100%
+
+
+
+
+
+
+
+
+
+
+// mobile
 @media only screen and (max-width: $mobile-screen)
     #flowchart-wrapper
 
         #flowchart-question-container
             padding: 1rem 10px
-
-        #flowchart-choices-container
-            height: 100%
 
         
         #flowchart-back-container
