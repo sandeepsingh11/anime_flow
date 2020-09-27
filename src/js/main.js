@@ -111,6 +111,24 @@ function createChoices(currentNode) {
         });
 
         flowchartChoicesContainerEle.appendChild(spanNode);
+
+        fadeIn(spanNode);
+    }
+
+
+
+    // node fade in animation
+    function fadeIn(ele) {
+        var opacity = 0;
+        var id = setInterval(() => {
+            if (ele.style.opacity == 1) {
+                clearInterval(id);
+            }
+            else {
+                opacity += 0.02;
+                ele.style.opacity = opacity;
+            }
+        }, 10);
     }
 }
 
@@ -162,6 +180,24 @@ function createAnswers(answerNode) {
         });
 
         flowchartChoicesContainerEle.appendChild(spanNode);
+
+        fadeIn(spanNode);
+    }
+
+
+
+    // node fade in animation
+    function fadeIn(ele) {
+        var opacity = 0;
+        var id = setInterval(() => {
+            if (ele.style.opacity == 1) {
+                clearInterval(id);
+            }
+            else {
+                opacity += 0.02;
+                ele.style.opacity = opacity;
+            }
+        }, 10);
     }
 }
 
