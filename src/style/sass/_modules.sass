@@ -1,5 +1,5 @@
 #flowchart-wrapper
-    height: 100%
+    height: auto
 
     .spinner
         width: 120px
@@ -31,24 +31,39 @@
     #flowchart-choices-container
         justify-content: center
         align-content: center
-        // view height - #flowchart-question-contaienr padding - font-size - line-height
-        height: calc(100vh - 10vh - 2rem - 1.15rem)
-        padding: 1rem 32px // 32px for the "back" svg
+        // view height - #flowchart-question-container padding - font-size - line-height
+        min-height: calc(100vh - 10vh - 2rem - 1.15rem)
+        height: auto
+        padding: 1rem 3.5rem
 
 
         .anime
-            width: 250px
+            width: 225px
             margin: 0.5rem
+            border: 2px solid black
+            border-radius: 3px
+            box-shadow: 2px 3px 8px black
+            transition: transform 0.2s
+
+            &:hover
+                background-color: salmon
+                transform: translateX(5px)
 
             .anime-image
                 display: block
                 width: 100%
-                height: 300px
+                height: 320px
+                border-bottom: 2px solid black
                 object-fit: cover
+
+            .anime-link
+                    text-decoration: none
+                    color: black
 
             .anime-title
                 font-size: 1rem
-                margin: 0.5rem auto
+                margin: 0
+                padding: 0.5rem 0.25rem
     
 
     #flowchart-back-container
@@ -89,8 +104,7 @@
     #flowchart-wrapper
 
         #flowchart-choices-container
-            height: 100%
-            min-height: 100vh
+            padding: 1rem 32px // 32px for the "back" svg
 
 
 

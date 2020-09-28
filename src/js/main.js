@@ -316,18 +316,26 @@ function jikanGetAnime(animeTitle) {
 
 
 
-            // h3 node
-            var h3Node = document.createElement("h3");
-            h3Node.setAttribute("class", "anime-title");
-            var h3Text = document.createTextNode(result.results[i].title);
-            h3Node.appendChild(h3Text);
+            // anchor and p nodes
+            var anchorNode2 = document.createElement("a");
+            anchorNode2.setAttribute("href", result.results[i].url);
+            anchorNode2.setAttribute("target", "_blank");
+            anchorNode2.setAttribute("rel", "noopener noreferrer");
+            anchorNode2.setAttribute("class", "anime-link");
+            
+            var pNode = document.createElement("p");
+            pNode.setAttribute("class", "anime-title");
+            var pText = document.createTextNode(result.results[i].title);
+            pNode.appendChild(pText);
+
+            anchorNode2.appendChild(pNode);
             
 
 
 
 
             animeNode.appendChild(anchorNode);
-            animeNode.appendChild(h3Node);
+            animeNode.appendChild(anchorNode2);
 
             flowchartChoicesContainerEle.append(animeNode);
         }
