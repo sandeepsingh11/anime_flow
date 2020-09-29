@@ -133,21 +133,6 @@
             ]
         },
 		{
-            "head": 8, 
-            "type": "q", 
-            "ques": "action or adventure?", 
-            "tails": [
-                {
-                    "ans": "road trip adventure",
-                    "tail": 23  
-                },
-                {
-                    "ans": "full-blown action",
-                    "tail": 24  
-                }
-            ]
-        },
-		{
             "head": 23, 
             "type": "q", 
             "ques": "theme?", 
@@ -292,10 +277,6 @@
                     "tail": 37  
                 },
                 {
-                    "ans": "spirit hunting",
-                    "tail": 38  
-                },
-                {
                     "ans": "magical girls",
                     "tail": 39  
                 },
@@ -334,7 +315,7 @@
             "type": "a", 
             "ques": "", 
             "tails": [
-                "Zetsuen no Tempest","Hitman Reborn!","Shakugan no Shana"
+                "Zetsuen no Tempest","Shakugan no Shana"
             ]
         },
 		{
@@ -342,7 +323,7 @@
             "type": "a", 
             "ques": "", 
             "tails": [
-                "Kenichi","Ranma ½","Fist of the North Star"
+                "Kenichi","Fist of the North Star"
             ]
         },
 		{
@@ -2389,6 +2370,384 @@
             "ques": "", 
             "tails": [
                 "Puella Magi Madoka Magica"
+            ]
+        }
+        ,
+		{
+            "head": 8, 
+            "type": "q", 
+            "ques": "episodes?", 
+            "tails": [
+                {
+                    "ans": "hundreds!",
+                    "tail": 199  
+                },
+                {
+                    "ans": "less than a hundred",
+                    "tail": 200  
+                }
+            ]
+        }
+        ,
+		{
+            "head": 199, 
+            "type": "q", 
+            "ques": "pick your poison", 
+            "tails": [
+                {
+                    "ans": "pirates",
+                    "tail": 201  
+                },
+                {
+                    "ans": "ninjas",
+                    "tail": 202  
+                },
+                {
+                    "ans": "spirit samurai",
+                    "tail": 203  
+                },
+                {
+                    "ans": "mages",
+                    "tail": 204  
+                },
+                {
+                    "ans": "magical girls",
+                    "tail": 205  
+                },
+                {
+                    "ans": "mechas",
+                    "tail": 206  
+                },
+                {
+                    "ans": "greatness",
+                    "tail": 207  
+                },
+                {
+                    "ans": "THE classic",
+                    "tail": 208  
+                },
+                {
+                    "ans": "urban fantasy",
+                    "tail": 209  
+                },
+                {
+                    "ans": "martial arts",
+                    "tail": 210  
+                },
+                {
+                    "ans": "spirit hunting",
+                    "tail": 38  
+                }
+            ]
+        },
+		{
+            "head": 201, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "One Piece"
+            ]
+        },
+		{
+            "head": 202, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Naruto"
+            ]
+        },
+		{
+            "head": 203, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Bleach"
+            ]
+        },
+		{
+            "head": 204, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Fairy Tail"
+            ]
+        },
+		{
+            "head": 205, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Pretty Cure"
+            ]
+        },
+		{
+            "head": 206, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Gundam"
+            ]
+        },
+		{
+            "head": 207, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Hunter x Hunter"
+            ]
+        },
+		{
+            "head": 208, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Dragon Ball"
+            ]
+        },
+		{
+            "head": 209, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Hitman Reborn!"
+            ]
+        },
+		{
+            "head": 210, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Ranma ½"
+            ]
+        }
+        ,
+		{
+            "head": 200, 
+            "type": "q", 
+            "ques": "flavor?", 
+            "tails": [
+                {
+                    "ans": "road trip adventure",
+                    "tail": 23  
+                },
+                {
+                    "ans": "full-blown action",
+                    "tail": 24  
+                },
+                {
+                    "ans": "trapped in a video game",
+                    "tail": 211  
+                },
+                {
+                    "ans": "space",
+                    "tail": 212  
+                },
+                {
+                    "ans": "fantasy",
+                    "tail": 213  
+                },
+                {
+                    "ans": "big city life",
+                    "tail": 214  
+                }
+            ]
+        }
+        ,
+		{
+            "head": 211, 
+            "type": "q", 
+            "ques": "choose your MMO", 
+            "tails": [
+                {
+                    "ans": "the dumb, popular one",
+                    "tail": 215  
+                },
+                {
+                    "ans": "the boring, smart one",
+                    "tail": 216  
+                }
+            ]
+        },
+		{
+            "head": 215, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Sword Art Online"
+            ]
+        },
+		{
+            "head": 216, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Log Horizon",".hack","Overlord"
+            ]
+        },
+		{
+            "head": 212, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Knights of Sidonia"
+            ]
+        },
+		{
+            "head": 213, 
+            "type": "q", 
+            "ques": "theme?", 
+            "tails": [
+                {
+                    "ans": "mankind's last stand",
+                    "tail": 217  
+                },
+                {
+                    "ans": "Arabian Nights (djinns)",
+                    "tail": 218  
+                },
+                {
+                    "ans": "dragons, adventure, and romance",
+                    "tail": 219  
+                },
+                {
+                    "ans": "medieval knights",
+                    "tail": 220  
+                },
+                {
+                    "ans": "anime Hogwarts",
+                    "tail": 221  
+                },
+                {
+                    "ans": "futuristic Hogwarts",
+                    "tail": 222  
+                },
+                {
+                    "ans": "spirit weapons",
+                    "tail": 223  
+                }
+            ]
+        },
+		{
+            "head": 217, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Attack on Titan"
+            ]
+        },
+		{
+            "head": 218, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Magi: The Labyrinth of Magic"
+            ]
+        },
+		{
+            "head": 219, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Akatsuki no Yona"
+            ]
+        },
+		{
+            "head": 220, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Nanatsu no Taizai"
+            ]
+        },
+		{
+            "head": 221, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Little Witch Academia","Zero no Tsukaima"
+            ]
+        },
+		{
+            "head": 222, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Mahouka Koukou no Rettousei"
+            ]
+        },
+		{
+            "head": 223, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Soul Eater"
+            ]
+        },
+		{
+            "head": 214, 
+            "type": "q", 
+            "ques": "what drives your plot?", 
+            "tails": [
+                {
+                    "ans": "gang wars",
+                    "tail": 224  
+                },
+                {
+                    "ans": "X-Men school girls",
+                    "tail": 225  
+                },
+                {
+                    "ans": "life in a spirit town",
+                    "tail": 226  
+                },
+                {
+                    "ans": "spirit hunting",
+                    "tail": 227  
+                },
+                {
+                    "ans": "demon hunting",
+                    "tail": 228  
+                }
+            ]
+        },
+		{
+            "head": 224, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Durarara!!"
+            ]
+        },
+		{
+            "head": 225, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "A Certain Scientific Railgun"
+            ]
+        },
+		{
+            "head": 226, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Yozakura Quartet: Hana no Uta"
+            ]
+        },
+		{
+            "head": 227, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Noragami"
+            ]
+        },
+		{
+            "head": 228, 
+            "type": "a", 
+            "ques": "", 
+            "tails": [
+                "Blue Exorcist"
             ]
         }
     ]
