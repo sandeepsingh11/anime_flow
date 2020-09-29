@@ -3,34 +3,34 @@
         {
             "head": 0,
             "type": "q",
-            "body": "I'm in the mood for something",
-            "tail": [
+            "ques": "I'm in the mood for something",
+            "tails": [
                 {
-                    "fur": "dynamic",
+                    "ans": "dynamic",
                     "tail": 1
                 },
                 {
-                    "fur": "funny",
+                    "ans": "funny",
                     "tail": 2
                 },
                 {
-                    "fur": "calm",
+                    "ans": "calm",
                     "tail": 3
                 },
                 {
-                    "fur": "moving",
+                    "ans": "moving",
                     "tail": 4
                 },
                 {
-                    "fur": "mature",
+                    "ans": "mature",
                     "tail": 5
                 },
                 {
-                    "fur": "intense",
+                    "ans": "intense",
                     "tail": 6
                 },
                 {
-                    "fur": "scary",
+                    "ans": "scary",
                     "tail": 7
                 }
             ]
@@ -38,18 +38,18 @@
         {
             "head": 1,
             "type": "q",
-            "body": "what type of action you lookin for?",
-            "tail": [
+            "ques": "what type of action you lookin for?",
+            "tails": [
                 {
-                    "fur": "fighting!",
+                    "ans": "fighting!",
                     "tail": 8
                 },
                 {
-                    "fur": "sports",
+                    "ans": "sports",
                     "tail": 9
                 },
                 {
-                    "fur": "F U N",
+                    "ans": "F U N",
                     "tail": 10
                 }
             ]
@@ -57,14 +57,14 @@
         {
             "head": 9,
             "type": "q",
-            "body": "old-school or modern?",
-            "tail": [
+            "ques": "old-school or modern?",
+            "tails": [
                 {
-                    "fur": "old-school yo",
+                    "ans": "old-school yo",
                     "tail": 11
                 },
                 {
-                    "fur": "modern, duh",
+                    "ans": "modern, duh",
                     "tail": 12
                 }
             ]
@@ -72,62 +72,62 @@
         {
             "head": 11,
             "type": "a",
-            "body": "",
-            "tail": [
+            "ques": "",
+            "tails": [
                 "Hajime no Ippo", "Initial D", "Slam Dunk", "One Outs", "Major", "Hikaru no Go"
             ]
         },
 		{
             "head": 12, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kuroko no Basket","Ace of Diamond","Yowamushi Pedal","Baby Steps","Haikyuu!","Free!","Eyeshield 21","Chihayafuru","Ping Pong"
             ]
         },
         {
             "head": 10, 
             "type": "q", 
-            "body": "what kind of F U N?", 
-            "tail": [
+            "ques": "what kind of F U N?", 
+            "tails": [
                 {
-                    "fur": "hell yeah",
+                    "ans": "hell yeah",
                     "tail": 13  
                 },
                 {
-                    "fur": "HELL YEAH",
+                    "ans": "HELL YEAH",
                     "tail": 14  
                 },
                 {
-                    "fur": "eyegasm",
+                    "ans": "eyegasm",
                     "tail": 15  
                 },
                 {
-                    "fur": "eargasm",
+                    "ans": "eargasm",
                     "tail": 16  
                 },
                 {
-                    "fur": "foodgasm",
+                    "ans": "foodgasm",
                     "tail": 17  
                 },
                 {
-                    "fur": "cartoon",
+                    "ans": "cartoon",
                     "tail": 18  
                 },
                 {
-                    "fur": "tribute to superheros",
+                    "ans": "tribute to superheros",
                     "tail": 19  
                 },
                 {
-                    "fur": "zombie apocalypse",
+                    "ans": "zombie apocalypse",
                     "tail": 20  
                 },
                 {
-                    "fur": "how stupid can it get?",
+                    "ans": "how stupid can it get?",
                     "tail": 21  
                 },
                 {
-                    "fur": "old-school comic style",
+                    "ans": "old-school comic style",
                     "tail": 22  
                 }
             ]
@@ -135,14 +135,14 @@
 		{
             "head": 8, 
             "type": "q", 
-            "body": "action or adventure?", 
-            "tail": [
+            "ques": "action or adventure?", 
+            "tails": [
                 {
-                    "fur": "road trip adventure",
+                    "ans": "road trip adventure",
                     "tail": 23  
                 },
                 {
-                    "fur": "full-blown action",
+                    "ans": "full-blown action",
                     "tail": 24  
                 }
             ]
@@ -150,42 +150,42 @@
 		{
             "head": 23, 
             "type": "q", 
-            "body": "theme?", 
-            "tail": [
+            "ques": "theme?", 
+            "tails": [
                 {
-                    "fur": "journey into manhood via mecha",
+                    "ans": "journey into manhood via mecha",
                     "tail": 25  
                 },
                 {
-                    "fur": "steampunk scientific magic",
+                    "ans": "steampunk scientific magic",
                     "tail": 26  
                 },
                 {
-                    "fur": "space opera jazz",
+                    "ans": "space opera jazz",
                     "tail": 27  
                 },
                 {
-                    "fur": "'30s in Chicago",
+                    "ans": "'30s in Chicago",
                     "tail": 28  
                 },
                 {
-                    "fur": "talking (&) swords",
+                    "ans": "talking (&) swords",
                     "tail": 29  
                 },
                 {
-                    "fur": "aerial combat",
+                    "ans": "aerial combat",
                     "tail": 30  
                 },
                 {
-                    "fur": "hip-hop",
+                    "ans": "hip-hop",
                     "tail": 31  
                 },
                 {
-                    "fur": "historical",
+                    "ans": "historical",
                     "tail": 32  
                 },
                 {
-                    "fur": "spirited away into a fantasy drama",
+                    "ans": "spirited away into a fantasy drama",
                     "tail": 33  
                 }
             ]
@@ -193,122 +193,122 @@
 		{
             "head": 25, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Tengen Toppa Gurren Lagann"
             ]
         },
 		{
             "head": 26, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Fullmetal Alchemist: Brotherhood"
             ]
         },
 		{
             "head": 27, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Cowboy Bebop"
             ]
         },
 		{
             "head": 28, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Baccano!"
             ]
         },
 		{
             "head": 29, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Katanagatari"
             ]
         },
 		{
             "head": 30, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Last Exile"
             ]
         },
 		{
             "head": 31, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Samurai Champloo"
             ]
         },
 		{
             "head": 32, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Rurouni Kenshin"
             ]
         },
 		{
             "head": 33, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Twelve Kingdoms"
             ]
         },
 		{
             "head": 24, 
             "type": "q", 
-            "body": "supernatural?", 
-            "tail": [
+            "ques": "supernatural?", 
+            "tails": [
                 {
-                    "fur": "not really",
+                    "ans": "not really",
                     "tail": 34  
                 },
                 {
-                    "fur": "journey into manhood via mecha",
+                    "ans": "journey into manhood via mecha",
                     "tail": 25  
                 },
                 {
-                    "fur": "medieval fantasy",
+                    "ans": "medieval fantasy",
                     "tail": 35  
                 },
                 {
-                    "fur": "steampunk scientific magic",
+                    "ans": "steampunk scientific magic",
                     "tail": 26  
                 },
                 {
-                    "fur": "urban fantasy",
+                    "ans": "urban fantasy",
                     "tail": 36  
                 },
                 {
-                    "fur": "martial arts",
+                    "ans": "martial arts",
                     "tail": 37  
                 },
                 {
-                    "fur": "spirit hunting",
+                    "ans": "spirit hunting",
                     "tail": 38  
                 },
                 {
-                    "fur": "magical girls",
+                    "ans": "magical girls",
                     "tail": 39  
                 },
                 {
-                    "fur": "science fiction",
+                    "ans": "science fiction",
                     "tail": 40  
                 },
                 {
-                    "fur": "samurai",
+                    "ans": "samurai",
                     "tail": 41  
                 },
                 {
-                    "fur": "superpowers",
+                    "ans": "superpowers",
                     "tail": 42  
                 }
             ]
@@ -316,78 +316,78 @@
 		{
             "head": 34, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Black Lagoon","Phantom"
             ]
         },
 		{
             "head": 35, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Rage of Bahamut: Genesis","Slayers","Hitsugi no Chaika","Akame ga Kill"
             ]
         },
 		{
             "head": 36, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Zetsuen no Tempest","Hitman Reborn!","Shakugan no Shana"
             ]
         },
 		{
             "head": 37, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kenichi","Ranma ½","Fist of the North Star"
             ]
         },
 		{
             "head": 38, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Yuu Yuu Hakusho"
             ]
         },
 		{
             "head": 39, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Sailor Moon","Cardcaptor Sakura","Lyrical Nanoha","Mahou Shoujo Madoka Magica","Princess Tutu"
             ]
         },
 		{
             "head": 41, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Samurai Champloo","Rurouni Kenshin"
             ]
         },
 		{
             "head": 42, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Darker Than Black"
             ]
         },
 		{
             "head": 40, 
             "type": "q", 
-            "body": "type of scifi?", 
-            "tail": [
+            "ques": "type of scifi?", 
+            "tails": [
                 {
-                    "fur": "shootout",
+                    "ans": "shootout",
                     "tail": 43  
                 },
                 {
-                    "fur": "mecha",
+                    "ans": "mecha",
                     "tail": 44  
                 }
             ]
@@ -395,16 +395,16 @@
 		{
             "head": 43, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Gungrave","Trigun","Outlaw Star"
             ]
         },
 		{
             "head": 44, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Eureka Seven","Big O","Code Geass","Gunbuster","Full Metal Panic","Escaflowne","Macrosse"
             ]
         }
@@ -412,98 +412,98 @@
 		{
             "head": 13, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "FLCL"
             ]
         },
 		{
             "head": 14, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kill la Kill","Gurren Lagann"
             ]
         },
 		{
             "head": 15, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "No Game No Life"
             ]
         },
 		{
             "head": 16, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Symphogear"
             ]
         },
 		{
             "head": 17, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Shokugeki no Souma"
             ]
         },
 		{
             "head": 18, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Panty & Stocking"
             ]
         },
 		{
             "head": 19, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Samurai Flamenco"
             ]
         },
 		{
             "head": 20, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Highschool of  the Dead"
             ]
         },
 		{
             "head": 21, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Cross Ange"
             ]
         },
 		{
             "head": 22, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "JoJo's Bizzare Adventure"
             ]
         },
 		{
             "head": 2, 
             "type": "q", 
-            "body": "what kind of comedy?", 
-            "tail": [
+            "ques": "what kind of comedy?", 
+            "tails": [
                 {
-                    "fur": "daily life",
+                    "ans": "daily life",
                     "tail": 45  
                 },
                 {
-                    "fur": "romance comedy",
+                    "ans": "romance comedy",
                     "tail": 46  
                 },
                 {
-                    "fur": "parody",
+                    "ans": "parody",
                     "tail": 47  
                 }
             ]
@@ -511,14 +511,14 @@
 		{
             "head": 45, 
             "type": "q", 
-            "body": "setting?", 
-            "tail": [
+            "ques": "setting?", 
+            "tails": [
                 {
-                    "fur": "school",
+                    "ans": "school",
                     "tail": 48  
                 },
                 {
-                    "fur": "work",
+                    "ans": "work",
                     "tail": 49  
                 }
             ]
@@ -526,38 +526,38 @@
 		{
             "head": 48, 
             "type": "q", 
-            "body": "about?", 
-            "tail": [
+            "ques": "about?", 
+            "tails": [
                 {
-                    "fur": "delinquents",
+                    "ans": "delinquents",
                     "tail": 50  
                 },
                 {
-                    "fur": "nursing a demon baby",
+                    "ans": "nursing a demon baby",
                     "tail": 51  
                 },
                 {
-                    "fur": "\"ordinary\" school life",
+                    "ans": "\"ordinary\" school life",
                     "tail": 52  
                 },
                 {
-                    "fur": "discount fight club",
+                    "ans": "discount fight club",
                     "tail": 53  
                 },
                 {
-                    "fur": "boys being boys",
+                    "ans": "boys being boys",
                     "tail": 54  
                 },
                 {
-                    "fur": "dirty jokes",
+                    "ans": "dirty jokes",
                     "tail": 55  
                 },
                 {
-                    "fur": "teaching",
+                    "ans": "teaching",
                     "tail": 57  
                 },
                 {
-                    "fur": "lighthearted casual comedy with romance and supernatural",
+                    "ans": "lighthearted casual comedy with romance and supernatural",
                     "tail": 56  
                 }
             ]
@@ -566,90 +566,90 @@
 		{
             "head": 57, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Sayonara Zetsubou Sensei","Great Teacher Onizuka"
             ]
         },
 		{
             "head": 50, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Great Teacher Onizuka","Cromartie High","Beelzebub"
             ]
         },
 		{
             "head": 51, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Beelzebub"
             ]
         },
 		{
             "head": 52, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Nichijou","Azumanga Daioh","D-Frag!","Harushi Suzumiya"
             ]
         },
 		{
             "head": 53, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Ben-To!"
             ]
         },
 		{
             "head": 54, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Daily Lives of High School Boys"
             ]
         },
 		{
             "head": 55, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Seitokai Yakuindomo","Shimoneta","Prison School"
             ]
         },
 		{
             "head": 56, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Yamada and the Seven Witches","Witch Craft Works"
             ]
         },
 		{
             "head": 49, 
             "type": "q", 
-            "body": "work at?", 
-            "tail": [
+            "ques": "work at?", 
+            "tails": [
                 {
-                    "fur": "animation studio",
+                    "ans": "animation studio",
                     "tail": 58  
                 },
                 {
-                    "fur": "restaurant",
+                    "ans": "restaurant",
                     "tail": 59  
                 },
                 {
-                    "fur": "Disneyland",
+                    "ans": "Disneyland",
                     "tail": 60  
                 },
                 {
-                    "fur": "McDonald's",
+                    "ans": "McDonald's",
                     "tail": 61  
                 },
                 {
-                    "fur": "teaching",
+                    "ans": "teaching",
                     "tail": 57  
                 }
             ]
@@ -657,110 +657,110 @@
 		{
             "head": 58, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Shirobako"
             ]
         },
 		{
             "head": 59, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Working!","Servant x Service"
             ]
         },
 		{
             "head": 60, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Amagi Brilliant Park"
             ]
         },
 		{
             "head": 61, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "The Devil is a Part-Timer"
             ]
         },
 		{
             "head": 57, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Sayonara Zetsubou Sensei","Great Teacher Onizuka"
             ]
         },
 		{
             "head": 46, 
             "type": "q", 
-            "body": "theme?", 
-            "tail": [
+            "ques": "theme?", 
+            "tails": [
                 {
-                    "fur": "for starters",
+                    "ans": "for starters",
                     "tail": 62  
                 },
                 {
-                    "fur": "anti-romance",
+                    "ans": "anti-romance",
                     "tail": 63  
                 },
                 {
-                    "fur": "drawing girly manga",
+                    "ans": "drawing girly manga",
                     "tail": 64  
                 },
                 {
-                    "fur": "meta-humor",
+                    "ans": "meta-humor",
                     "tail": 65  
                 },
                 {
-                    "fur": "college-aged cast",
+                    "ans": "college-aged cast",
                     "tail": 66  
                 },
                 {
-                    "fur": "girl-oriented (shoujo)",
+                    "ans": "girl-oriented (shoujo)",
                     "tail": 67  
                 },
                 {
-                    "fur": "sitcom",
+                    "ans": "sitcom",
                     "tail": 68  
                 },
                 {
-                    "fur": "harem",
+                    "ans": "harem",
                     "tail": 69  
                 },
                 {
-                    "fur": "incest",
+                    "ans": "incest",
                     "tail": 70  
                 },
                 {
-                    "fur": "gay couple",
+                    "ans": "gay couple",
                     "tail": 71  
                 },
                 {
-                    "fur": "old classic",
+                    "ans": "old classic",
                     "tail": 72  
                 },
                 {
-                    "fur": "sports",
+                    "ans": "sports",
                     "tail": 73  
                 },
                 {
-                    "fur": "everybody wins",
+                    "ans": "everybody wins",
                     "tail": 74  
                 },
                 {
-                    "fur": "delusional supernerds ",
+                    "ans": "delusional supernerds ",
                     "tail": 75  
                 },
                 {
-                    "fur": "lighthearted casual comedy with romance and supernatural",
+                    "ans": "lighthearted casual comedy with romance and supernatural",
                     "tail": 56  
                 },
                 {
-                    "fur": "slice of life turned drama",
+                    "ans": "slice of life turned drama",
                     "tail": 76  
                 }
             ]
@@ -768,86 +768,86 @@
 		{
             "head": 62, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Toradora!"
             ]
         },
 		{
             "head": 63, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Oregairu"
             ]
         },
 		{
             "head": 64, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Gekkan Shoujo Nozaki-kun"
             ]
         },
 		{
             "head": 65, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Saekano"
             ]
         },
 		{
             "head": 66, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Golden Time"
             ]
         },
 		{
             "head": 67, 
             "type": "q", 
-            "body": "theme, again lol", 
-            "tail": [
+            "ques": "theme, again lol", 
+            "tails": [
                 {
-                    "fur": "playful love",
+                    "ans": "playful love",
                     "tail": 77  
                 },
                 {
-                    "fur": "reverse harem",
+                    "ans": "reverse harem",
                     "tail": 78  
                 },
                 {
-                    "fur": "breaking the loner",
+                    "ans": "breaking the loner",
                     "tail": 79  
                 },
                 {
-                    "fur": "tall girl, short boy",
+                    "ans": "tall girl, short boy",
                     "tail": 80  
                 },
                 {
-                    "fur": "weirdo girl, cool boy",
+                    "ans": "weirdo girl, cool boy",
                     "tail": 81  
                 },
                 {
-                    "fur": "idols",
+                    "ans": "idols",
                     "tail": 82  
                 },
                 {
-                    "fur": "gentle giant",
+                    "ans": "gentle giant",
                     "tail": 83  
                 },
                 {
-                    "fur": "\"too busy for romance\"",
+                    "ans": "\"too busy for romance\"",
                     "tail": 84  
                 },
                 {
-                    "fur": "fine arts students",
+                    "ans": "fine arts students",
                     "tail": 85  
                 },
                 {
-                    "fur": "life as a shrine deity",
+                    "ans": "life as a shrine deity",
                     "tail": 86  
                 }
             ]
@@ -855,182 +855,183 @@
 		{
             "head": 77, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Maid-Sama"
             ]
         },
 		{
             "head": 78, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Ouran Koukou Host Club","Fruits Basket"
             ]
         },
 		{
             "head": 79, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "The Wallflower"
             ]
         },
 		{
             "head": 80, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Lovely Complex"
             ]
         },
 		{
             "head": 81, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kimi Ni Todoke"
             ]
         },
 		{
             "head": 82, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Skip Beat!"
             ]
         },
 		{
             "head": 83, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Ore Monogatari"
             ]
         },
 		{
             "head": 84, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "My Little Monster"
             ]
         },
 		{
             "head": 85, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Honey and Clover"
             ]
         },
 		{
             "head": 86, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kamisama Kiss"
             ]
         },
 		{
             "head": 68, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "School Rumble","Baka to Test","B Gata H Kei"
             ]
         },
 		{
             "head": 69, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Nise Koi","Shuffle!","Highschool DxD"
             ]
         },
 		{
             "head": 70, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "OreImo","Kiss x Sis"
             ]
         },
 		{
             "head": 71, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Junjou Romantica","Sakura Trick"
             ]
         },
 		{
             "head": 72, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Maison Ikkoku","Romeo no Aoi Sora"
             ]
         },
 		{
             "head": 73, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Cross Game"
             ]
         },
 		{
             "head": 74, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Amagami SS"
             ]
         },
 		{
             "head": 75, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Chuunibyou"
             ]
         },
 		{
             "head": 56, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Yamada and the Seven Witches","Witch Craft Works"
             ]
         },
 		{
             "head": 76, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kokoro Connect"
             ]
-        },
+        }
+,
 		{
             "head": 47, 
             "type": "q", 
-            "body": "making fun of:", 
-            "tail": [
+            "ques": "making fun of:", 
+            "tails": [
                 {
-                    "fur": "anime cliches",
+                    "ans": "anime cliches",
                     "tail": 87  
                 },
                 {
-                    "fur": "action series",
+                    "ans": "action series",
                     "tail": 88  
                 },
                 {
-                    "fur": "romance comedies",
+                    "ans": "romance comedies",
                     "tail": 89  
                 },
                 {
-                    "fur": "society",
+                    "ans": "society",
                     "tail": 90  
                 }
             ]
@@ -1038,50 +1039,50 @@
 		{
             "head": 87, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "The Melancholy of Haruhi Suzumiya","Lucky Star","Binbougami ga!"
             ]
         },
 		{
             "head": 88, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Gintama","Kill la Kill","Samurai Flamenco"
             ]
         },
 		{
             "head": 89, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Gekkan Shoujo Nozaki-kun","Saekano","The World God Only Knows"
             ]
         },
 		{
             "head": 90, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Humanity Has Declined"
             ]
         },
 		{
             "head": 3, 
             "type": "q", 
-            "body": "chill with who?", 
-            "tail": [
+            "ques": "chill with who?", 
+            "tails": [
                 {
-                    "fur": "random people",
+                    "ans": "random people",
                     "tail": 91  
                 },
                 {
-                    "fur": "cute girls doing cute things",
+                    "ans": "cute girls doing cute things",
                     "tail": 92  
                 },
                 {
-                    "fur": "Jesus and Buddha",
+                    "ans": "Jesus and Buddha",
                     "tail": 93  
                 }
             ]
@@ -1089,26 +1090,26 @@
 		{
             "head": 91, 
             "type": "q", 
-            "body": "setting?", 
-            "tail": [
+            "ques": "setting?", 
+            "tails": [
                 {
-                    "fur": "at work",
+                    "ans": "at work",
                     "tail": 94  
                 },
                 {
-                    "fur": "school friends drawing manga",
+                    "ans": "school friends drawing manga",
                     "tail": 95  
                 },
                 {
-                    "fur": "school mystery club",
+                    "ans": "school mystery club",
                     "tail": 96  
                 },
                 {
-                    "fur": "road trip adventure",
+                    "ans": "road trip adventure",
                     "tail": 97  
                 },
                 {
-                    "fur": "adult women",
+                    "ans": "adult women",
                     "tail": 98  
                 }
             ]
@@ -1116,30 +1117,30 @@
 		{
             "head": 94, 
             "type": "q", 
-            "body": "where?", 
-            "tail": [
+            "ques": "where?", 
+            "tails": [
                 {
-                    "fur": "idyllic Venice",
+                    "ans": "idyllic Venice",
                     "tail": 99  
                 },
                 {
-                    "fur": "life in a band",
+                    "ans": "life in a band",
                     "tail": 100  
                 },
                 {
-                    "fur": "rural japan",
+                    "ans": "rural japan",
                     "tail": 101  
                 },
                 {
-                    "fur": "shopping alley",
+                    "ans": "shopping alley",
                     "tail": 102  
                 },
                 {
-                    "fur": "spirit hunting",
+                    "ans": "spirit hunting",
                     "tail": 103  
                 },
                 {
-                    "fur": "astronauts",
+                    "ans": "astronauts",
                     "tail": 104  
                 }
             ]
@@ -1147,90 +1148,90 @@
 		{
             "head": 99, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Aria"
             ]
         },
 		{
             "head": 100, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Beck","Hibike! Euphonium"
             ]
         },
 		{
             "head": 101, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Barakamon"
             ]
         },
 		{
             "head": 102, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Tamako Market"
             ]
         },
 		{
             "head": 103, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kyoukai no Kanata"
             ]
         },
 		{
             "head": 104, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Space Brothers"
             ]
         },
 		{
             "head": 95, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Bakuman"
             ]
         },
 		{
             "head": 96, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Hyouka"
             ]
         },
 		{
             "head": 98, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Princess Jellyfish"
             ]
         },
 		{
             "head": 97, 
             "type": "q", 
-            "body": "road trip through?", 
-            "tail": [
+            "ques": "road trip through?", 
+            "tails": [
                 {
-                    "fur": "medieval Europe and its economy",
+                    "ans": "medieval Europe and its economy",
                     "tail": 105  
                 },
                 {
-                    "fur": "rural Japan and spirit stuff",
+                    "ans": "rural Japan and spirit stuff",
                     "tail": 106  
                 },
                 {
-                    "fur": "philosophy and a talking motorcycle",
+                    "ans": "philosophy and a talking motorcycle",
                     "tail": 107  
                 }
             ]
@@ -1238,54 +1239,54 @@
 		{
             "head": 105, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Spice & Wolf"
             ]
         },
 		{
             "head": 106, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Mushishi"
             ]
         },
 		{
             "head": 107, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kino's Journey"
             ]
         },
 		{
             "head": 93, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Saint Oniisan"
             ]
         },
 		{
             "head": 92, 
             "type": "q", 
-            "body": "what's cute?", 
-            "tail": [
+            "ques": "what's cute?", 
+            "tails": [
                 {
-                    "fur": "wannabe popstars",
+                    "ans": "wannabe popstars",
                     "tail": 108  
                 },
                 {
-                    "fur": "life away from city",
+                    "ans": "life away from city",
                     "tail": 109  
                 },
                 {
-                    "fur": "tank drifting",
+                    "ans": "tank drifting",
                     "tail": 110  
                 },
                 {
-                    "fur": "cute PTSD",
+                    "ans": "cute PTSD",
                     "tail": 111  
                 }
             ]
@@ -1293,14 +1294,14 @@
 		{
             "head": 108, 
             "type": "q", 
-            "body": "pro or amateur?", 
-            "tail": [
+            "ques": "pro or amateur?", 
+            "tails": [
                 {
-                    "fur": "big stage",
+                    "ans": "big stage",
                     "tail": 112  
                 },
                 {
-                    "fur": "school club",
+                    "ans": "school club",
                     "tail": 113  
                 }
             ]
@@ -1308,46 +1309,46 @@
 		{
             "head": 112, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "The iDolM@ster","Aikatsu!"
             ]
         },
 		{
             "head": 113, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Love Life!","K-On!"
             ]
         },
 		{
             "head": 109, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Non Non Biyori"
             ]
         },
 		{
             "head": 110, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Girls & Panzer"
             ]
         },
 		{
             "head": 111, 
             "type": "q", 
-            "body": "serving as?", 
-            "tail": [
+            "ques": "serving as?", 
+            "tails": [
                 {
-                    "fur": "magical girls",
+                    "ans": "magical girls",
                     "tail": 114  
                 },
                 {
-                    "fur": "soldiers",
+                    "ans": "soldiers",
                     "tail": 115  
                 }
             ]
@@ -1355,38 +1356,38 @@
 		{
             "head": 114, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Yuuki Yuuna is a Hero"
             ]
         },
 		{
             "head": 115, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "So Ra Wo No To"
             ]
         },
 		{
             "head": 4, 
             "type": "q", 
-            "body": "feel how?", 
-            "tail": [
+            "ques": "feel how?", 
+            "tails": [
                 {
-                    "fur": "cute PTSD",
+                    "ans": "cute PTSD",
                     "tail": 111  
                 },
                 {
-                    "fur": "warm and bittersweet",
+                    "ans": "warm and bittersweet",
                     "tail": 116  
                 },
                 {
-                    "fur": "heavy cringe",
+                    "ans": "heavy cringe",
                     "tail": 117  
                 },
                 {
-                    "fur": "I've got tissues",
+                    "ans": "I've got tissues",
                     "tail": 118  
                 }
             ]
@@ -1394,18 +1395,18 @@
 		{
             "head": 116, 
             "type": "q", 
-            "body": "premise?", 
-            "tail": [
+            "ques": "premise?", 
+            "tails": [
                 {
-                    "fur": "unexpected child",
+                    "ans": "unexpected child",
                     "tail": 119  
                 },
                 {
-                    "fur": "unexpected relocation",
+                    "ans": "unexpected relocation",
                     "tail": 120  
                 },
                 {
-                    "fur": "talent vs hard work",
+                    "ans": "talent vs hard work",
                     "tail": 121  
                 }
             ]
@@ -1413,38 +1414,38 @@
 		{
             "head": 119, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Usagi Drop"
             ]
         },
 		{
             "head": 120, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Hanasaku Iroha"
             ]
         },
 		{
             "head": 121, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Sakurasou no Pet na Kanojo"
             ]
         },
 		{
             "head": 117, 
             "type": "q", 
-            "body": "the \"hero\"?", 
-            "tail": [
+            "ques": "the \"hero\"?", 
+            "tails": [
                 {
-                    "fur": "awkward teenage girl",
+                    "ans": "awkward teenage girl",
                     "tail": 122  
                 },
                 {
-                    "fur": "shut-in loser",
+                    "ans": "shut-in loser",
                     "tail": 123  
                 }
             ]
@@ -1452,34 +1453,34 @@
 		{
             "head": 122, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Watamote"
             ]
         },
 		{
             "head": 123, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Welcome to NHK!"
             ]
         },
 		{
             "head": 118, 
             "type": "q", 
-            "body": "feels?", 
-            "tail": [
+            "ques": "feels?", 
+            "tails": [
                 {
-                    "fur": "and laughs",
+                    "ans": "and laughs",
                     "tail": 124  
                 },
                 {
-                    "fur": "overcoming grief",
+                    "ans": "overcoming grief",
                     "tail": 125  
                 },
                 {
-                    "fur": "hardships of life and death",
+                    "ans": "hardships of life and death",
                     "tail": 126  
                 }
             ]
@@ -1487,22 +1488,22 @@
 		{
             "head": 124, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Angel Beats!","Charlotte"
             ]
         },
 		{
             "head": 125, 
             "type": "q", 
-            "body": "group relationships or individual developments?", 
-            "tail": [
+            "ques": "group relationships or individual developments?", 
+            "tails": [
                 {
-                    "fur": "kids and a childhood friend",
+                    "ans": "kids and a childhood friend",
                     "tail": 127  
                 },
                 {
-                    "fur": "young pianist and his mother",
+                    "ans": "young pianist and his mother",
                     "tail": 128  
                 }
             ]
@@ -1510,34 +1511,34 @@
 		{
             "head": 127, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "anohana: The Flower We Saw that Day"
             ]
         },
 		{
             "head": 128, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Your Lie in April"
             ]
         },
 		{
             "head": 126, 
             "type": "q", 
-            "body": "are you patient?", 
-            "tail": [
+            "ques": "are you patient?", 
+            "tails": [
                 {
-                    "fur": "nope",
+                    "ans": "nope",
                     "tail": 129  
                 },
                 {
-                    "fur": "just make it short",
+                    "ans": "just make it short",
                     "tail": 130  
                 },
                 {
-                    "fur": "bring it on",
+                    "ans": "bring it on",
                     "tail": 131  
                 }
             ]
@@ -1545,54 +1546,54 @@
 		{
             "head": 129, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Natsume's Book of Friends"
             ]
         },
 		{
             "head": 130, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Haibane Renmei"
             ]
         },
 		{
             "head": 131, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Clannad"
             ]
         },
 		{
             "head": 5, 
             "type": "q", 
-            "body": "genre?", 
-            "tail": [
+            "ques": "genre?", 
+            "tails": [
                 {
-                    "fur": "romance",
+                    "ans": "romance",
                     "tail": 132  
                 },
                 {
-                    "fur": "fantasy",
+                    "ans": "fantasy",
                     "tail": 133  
                 },
                 {
-                    "fur": "post-apocalyptic rural dystopia",
+                    "ans": "post-apocalyptic rural dystopia",
                     "tail": 134  
                 },
                 {
-                    "fur": "science fiction",
+                    "ans": "science fiction",
                     "tail": 135  
                 },
                 {
-                    "fur": "time travel",
+                    "ans": "time travel",
                     "tail": 136  
                 },
                 {
-                    "fur": "psychological",
+                    "ans": "psychological",
                     "tail": 137  
                 }
             ]
@@ -1600,46 +1601,46 @@
 		{
             "head": 132, 
             "type": "q", 
-            "body": "theme?", 
-            "tail": [
+            "ques": "theme?", 
+            "tails": [
                 {
-                    "fur": "mystery (supernatural)",
+                    "ans": "mystery (supernatural)",
                     "tail": 138  
                 },
                 {
-                    "fur": "fantasy",
+                    "ans": "fantasy",
                     "tail": 139  
                 },
                 {
-                    "fur": "1980 classic",
+                    "ans": "1980 classic",
                     "tail": 140  
                 },
                 {
-                    "fur": "comedy-drama with musicians ",
+                    "ans": "comedy-drama with musicians ",
                     "tail": 141  
                 },
                 {
-                    "fur": "swan lake magical girl",
+                    "ans": "swan lake magical girl",
                     "tail": 142  
                 },
                 {
-                    "fur": "love triangle",
+                    "ans": "love triangle",
                     "tail": 143  
                 },
                 {
-                    "fur": "incest",
+                    "ans": "incest",
                     "tail": 144  
                 },
                 {
-                    "fur": "homosexuality",
+                    "ans": "homosexuality",
                     "tail": 145  
                 },
                 {
-                    "fur": "adult life struggle",
+                    "ans": "adult life struggle",
                     "tail": 146  
                 },
                 {
-                    "fur": "realism",
+                    "ans": "realism",
                     "tail": 147  
                 }
             ]
@@ -1647,94 +1648,94 @@
 		{
             "head": 138, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Bakemonogatari"
             ]
         },
 		{
             "head": 139, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Nagi no Asukara"
             ]
         },
 		{
             "head": 140, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Rose of Versailes"
             ]
         },
 		{
             "head": 141, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Nodame Cantabile","Nana"
             ]
         },
 		{
             "head": 142, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Princess Tutu"
             ]
         },
 		{
             "head": 143, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "ef: A Tale of Memories","True Tears","Touch","White Album 2","School Days"
             ]
         },
 		{
             "head": 144, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Koi Kaze","Yosuga no Sora"
             ]
         },
 		{
             "head": 145, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Onii-sama e"
             ]
         },
 		{
             "head": 146, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Rec"
             ]
         },
 		{
             "head": 147, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Aku no Hana"
             ]
         },
 		{
             "head": 133, 
             "type": "q", 
-            "body": "action-packed?", 
-            "tail": [
+            "ques": "action-packed?", 
+            "tails": [
                 {
-                    "fur": "yes",
+                    "ans": "yes",
                     "tail": 148  
                 },
                 {
-                    "fur": "no",
+                    "ans": "no",
                     "tail": 149  
                 }
             ]
@@ -1742,46 +1743,46 @@
 		{
             "head": 148, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Seirei no Moribito","The Twelve Kingdoms"
             ]
         },
 		{
             "head": 149, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Beast Player Erin"
             ]
         },
 		{
             "head": 134, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Shinsekai Yori"
             ]
         },
 		{
             "head": 135, 
             "type": "q", 
-            "body": "type?", 
-            "tail": [
+            "ques": "type?", 
+            "tails": [
                 {
-                    "fur": "existential",
+                    "ans": "existential",
                     "tail": 150  
                 },
                 {
-                    "fur": "realistic",
+                    "ans": "realistic",
                     "tail": 151  
                 },
                 {
-                    "fur": "action",
+                    "ans": "action",
                     "tail": 152  
                 },
                 {
-                    "fur": "space opera",
+                    "ans": "space opera",
                     "tail": 153  
                 }
             ]
@@ -1789,18 +1790,18 @@
 		{
             "head": 150, 
             "type": "q", 
-            "body": "theme?", 
-            "tail": [
+            "ques": "theme?", 
+            "tails": [
                 {
-                    "fur": "cyberpunk",
+                    "ans": "cyberpunk",
                     "tail": 154  
                 },
                 {
-                    "fur": "romance",
+                    "ans": "romance",
                     "tail": 155  
                 },
                 {
-                    "fur": "mystery",
+                    "ans": "mystery",
                     "tail": 156  
                 }
             ]
@@ -1808,54 +1809,54 @@
 		{
             "head": 154, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Ghost in the Shell: Stand Alone Complex","Texhnolyze"
             ]
         },
 		{
             "head": 155, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kaiba"
             ]
         },
 		{
             "head": 156, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Ergo Proxy","Serial Experiments Lain"
             ]
         },
 		{
             "head": 151, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Planetes"
             ]
         },
 		{
             "head": 152, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Wolf's Rain"
             ]
         },
 		{
             "head": 153, 
             "type": "q", 
-            "body": "how epic?", 
-            "tail": [
+            "ques": "how epic?", 
+            "tails": [
                 {
-                    "fur": "starfleet",
+                    "ans": "starfleet",
                     "tail": 157  
                 },
                 {
-                    "fur": "starship",
+                    "ans": "starship",
                     "tail": 158  
                 }
             ]
@@ -1863,58 +1864,58 @@
 		{
             "head": 157, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Legend of the Galactic Heroes"
             ]
         },
 		{
             "head": 158, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Space Battleship Yamato 2199"
             ]
         },
 		{
             "head": 136, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Now and Then, Here and There"
             ]
         },
 		{
             "head": 137, 
             "type": "q", 
-            "body": "theme?", 
-            "tail": [
+            "ques": "theme?", 
+            "tails": [
                 {
-                    "fur": "reflection on life choices",
+                    "ans": "reflection on life choices",
                     "tail": 159  
                 },
                 {
-                    "fur": "supernatural",
+                    "ans": "supernatural",
                     "tail": 160  
                 },
                 {
-                    "fur": "game of souls",
+                    "ans": "game of souls",
                     "tail": 161  
                 },
                 {
-                    "fur": "artsy wild ride",
+                    "ans": "artsy wild ride",
                     "tail": 162  
                 },
                 {
-                    "fur": "cyberpunk",
+                    "ans": "cyberpunk",
                     "tail": 154  
                 },
                 {
-                    "fur": "romance",
+                    "ans": "romance",
                     "tail": 155  
                 },
                 {
-                    "fur": "mystery",
+                    "ans": "mystery",
                     "tail": 156  
                 }
             ]
@@ -1922,42 +1923,42 @@
 		{
             "head": 159, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Tatami Galaxy"
             ]
         },
 		{
             "head": 160, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "xxxHOLIC","Ghost Hound"
             ]
         },
 		{
             "head": 161, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Death Parade"
             ]
         },
 		{
             "head": 162, 
             "type": "q", 
-            "body": "hop in:", 
-            "tail": [
+            "ques": "hop in:", 
+            "tails": [
                 {
-                    "fur": "gender-bending feminist classic",
+                    "ans": "gender-bending feminist classic",
                     "tail": 163  
                 },
                 {
-                    "fur": "mystery overloaded with symbolism",
+                    "ans": "mystery overloaded with symbolism",
                     "tail": 164  
                 },
                 {
-                    "fur": "lesbian bear storm",
+                    "ans": "lesbian bear storm",
                     "tail": 165  
                 }
             ]
@@ -1965,74 +1966,74 @@
 		{
             "head": 163, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Revolutionary Girl Utena"
             ]
         },
 		{
             "head": 164, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Mawaru Penguindrum"
             ]
         },
 		{
             "head": 165, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Yuri Kuma Arashi"
             ]
         },
 		{
             "head": 7, 
             "type": "q", 
-            "body": "what's scary?", 
-            "tail": [
+            "ques": "what's scary?", 
+            "tails": [
                 {
-                    "fur": "vampires",
+                    "ans": "vampires",
                     "tail": 166  
                 },
                 {
-                    "fur": "vampires with guns",
+                    "ans": "vampires with guns",
                     "tail": 167  
                 },
                 {
-                    "fur": "aliens",
+                    "ans": "aliens",
                     "tail": 168  
                 },
                 {
-                    "fur": "mystery",
+                    "ans": "mystery",
                     "tail": 169  
                 },
                 {
-                    "fur": "sci-fi",
+                    "ans": "sci-fi",
                     "tail": 170  
                 },
                 {
-                    "fur": "ghosts",
+                    "ans": "ghosts",
                     "tail": 171  
                 },
                 {
-                    "fur": "superpowers",
+                    "ans": "superpowers",
                     "tail": 172  
                 },
                 {
-                    "fur": "war against the undead",
+                    "ans": "war against the undead",
                     "tail": 173  
                 },
                 {
-                    "fur": "the ring",
+                    "ans": "the ring",
                     "tail": 174  
                 },
                 {
-                    "fur": "demons",
+                    "ans": "demons",
                     "tail": 175  
                 },
                 {
-                    "fur": "people are",
+                    "ans": "people are",
                     "tail": 176  
                 }
             ]
@@ -2040,94 +2041,94 @@
 		{
             "head": 166, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Shiki","Blood+"
             ]
         },
 		{
             "head": 167, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Hellsing Ultimate"
             ]
         },
 		{
             "head": 168, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Parasyte"
             ]
         },
 		{
             "head": 169, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Another","Higurashi"
             ]
         },
 		{
             "head": 170, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Deadman Wonderland"
             ]
         },
 		{
             "head": 171, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Ghost Hunt","Dusk Maiden of Amnesia"
             ]
         },
 		{
             "head": 172, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Elfen Lied","Shinsekai Yori"
             ]
         },
 		{
             "head": 173, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Tokyo Ghoul"
             ]
         },
 		{
             "head": 174, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Jigoku Shoujo"
             ]
         },
 		{
             "head": 175, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Mononoke","Ayakashi"
             ]
         },
 		{
             "head": 176, 
             "type": "q", 
-            "body": "setting?", 
-            "tail": [
+            "ques": "setting?", 
+            "tails": [
                 {
-                    "fur": "Germany",
+                    "ans": "Germany",
                     "tail": 177  
                 },
                 {
-                    "fur": "dark fantasy",
+                    "ans": "dark fantasy",
                     "tail": 178  
                 }
             ]
@@ -2135,46 +2136,46 @@
 		{
             "head": 177, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Monster"
             ]
         },
 		{
             "head": 178, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Berserk"
             ]
         },
 		{
             "head": 6, 
             "type": "q", 
-            "body": "what kind of thriller?", 
-            "tail": [
+            "ques": "what kind of thriller?", 
+            "tails": [
                 {
-                    "fur": "crime drama",
+                    "ans": "crime drama",
                     "tail": 179  
                 },
                 {
-                    "fur": "science fiction",
+                    "ans": "science fiction",
                     "tail": 180  
                 },
                 {
-                    "fur": "Hunger Games",
+                    "ans": "Hunger Games",
                     "tail": 181  
                 },
                 {
-                    "fur": "gambling",
+                    "ans": "gambling",
                     "tail": 182  
                 },
                 {
-                    "fur": "proper drama",
+                    "ans": "proper drama",
                     "tail": 183  
                 },
                 {
-                    "fur": "I'm ready",
+                    "ans": "I'm ready",
                     "tail": 184  
                 }
             ]
@@ -2182,26 +2183,26 @@
 		{
             "head": 179, 
             "type": "q", 
-            "body": "with?", 
-            "tail": [
+            "ques": "with?", 
+            "tails": [
                 {
-                    "fur": "psychology of the sociopath",
+                    "ans": "psychology of the sociopath",
                     "tail": 185  
                 },
                 {
-                    "fur": "surreal investigation",
+                    "ans": "surreal investigation",
                     "tail": 186  
                 },
                 {
-                    "fur": "grim reaper",
+                    "ans": "grim reaper",
                     "tail": 187  
                 },
                 {
-                    "fur": "terrorists",
+                    "ans": "terrorists",
                     "tail": 188  
                 },
                 {
-                    "fur": "unusual timeline composition",
+                    "ans": "unusual timeline composition",
                     "tail": 189  
                 }
             ]
@@ -2209,54 +2210,54 @@
 		{
             "head": 185, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Monster"
             ]
         },
 		{
             "head": 186, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Paranoia Agent","Millennium Actress"
             ]
         },
 		{
             "head": 187, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Death Note"
             ]
         },
 		{
             "head": 188, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Zankyou no Terror","Eden of the East"
             ]
         },
 		{
             "head": 189, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kara no Kyoukai"
             ]
         },
 		{
             "head": 180, 
             "type": "q", 
-            "body": "contemporary or futuristic?", 
-            "tail": [
+            "ques": "contemporary or futuristic?", 
+            "tails": [
                 {
-                    "fur": "time travel experiment",
+                    "ans": "time travel experiment",
                     "tail": 190  
                 },
                 {
-                    "fur": "cyberpunk police",
+                    "ans": "cyberpunk police",
                     "tail": 191  
                 }
             ]
@@ -2264,34 +2265,34 @@
 		{
             "head": 190, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Steins;Gate"
             ]
         },
 		{
             "head": 191, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Psycho-Pass"
             ]
         },
 		{
             "head": 181, 
             "type": "q", 
-            "body": "with the support of?", 
-            "tail": [
+            "ques": "with the support of?", 
+            "tails": [
                 {
-                    "fur": "bombs",
+                    "ans": "bombs",
                     "tail": 192  
                 },
                 {
-                    "fur": "overly attached girlfriend 2.0",
+                    "ans": "overly attached girlfriend 2.0",
                     "tail": 193  
                 },
                 {
-                    "fur": "legendary heroes",
+                    "ans": "legendary heroes",
                     "tail": 194  
                 }
             ]
@@ -2299,46 +2300,46 @@
 		{
             "head": 192, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Btooom!"
             ]
         },
 		{
             "head": 193, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Mirai Nikki"
             ]
         },
 		{
             "head": 194, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Fate/Zero"
             ]
         },
 		{
             "head": 182, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Kaiji","Akegi"
             ]
         },
 		{
             "head": 183, 
             "type": "q", 
-            "body": "premise?", 
-            "tail": [
+            "ques": "premise?", 
+            "tails": [
                 {
-                    "fur": "Count of Monte Cristo",
+                    "ans": "Count of Monte Cristo",
                     "tail": 195  
                 },
                 {
-                    "fur": "juvenile detention center in the '50s",
+                    "ans": "juvenile detention center in the '50s",
                     "tail": 196  
                 }
             ]
@@ -2346,30 +2347,30 @@
 		{
             "head": 195, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Gankutsuou"
             ]
         },
 		{
             "head": 196, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Rainbow"
             ]
         },
 		{
             "head": 184, 
             "type": "q", 
-            "body": "no you're not", 
-            "tail": [
+            "ques": "no you're not", 
+            "tails": [
                 {
-                    "fur": "mechas",
+                    "ans": "mechas",
                     "tail": 197  
                 },
                 {
-                    "fur": "magical girls",
+                    "ans": "magical girls",
                     "tail": 198  
                 }
             ]
@@ -2377,16 +2378,16 @@
 		{
             "head": 197, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Neon Genesis Evangelion"
             ]
         },
 		{
             "head": 198, 
             "type": "a", 
-            "body": "", 
-            "tail": [
+            "ques": "", 
+            "tails": [
                 "Puella Magi Madoka Magica"
             ]
         }

@@ -20,11 +20,14 @@ xmlhttp.send();
 
 
 
-// global vars
+// keep track of flowchart ans
 var questionsChosen_arr = [];
-var currentNodeIndex = 0;
-var previousNodeIndex = -1;
 
+
+
+
+
+// main flowchart elements
 var flowchartQuestionEle = document.getElementById("flowchart-question");
 var flowchartChoicesContainerEle = document.getElementById("flowchart-choices-container");
 var flowchartBackEle = document.getElementById("flowchart-back-container");
@@ -36,14 +39,7 @@ flowchartBackEle.addEventListener("click", function() {
     if (prevNodeIndex !== undefined) {
         var prevNode = getNextNode(prevNodeIndex);
 
-        if (prevNode.type === "q") {
-            // if question type
-            createChoices(prevNode);
-        }
-        else {
-            // if answer type
-            createAnswers(prevNode)
-        }
+        createNodes(prevNode, prevNode.type);
     }
 });
 
@@ -55,18 +51,14 @@ flowchartBackEle.addEventListener("click", function() {
 function startFlowchart() {
 
     // create choices node
-    createChoices(flowchart[0]);
+    createNodes(flowchart[0], 'q');
 }
 
 
 
-// create choices nodes
-function createChoices(currentNode) {
-    
-    // update global vals
-    previousNodeIndex = getPreviousIndex(currentNodeIndex);
-    currentNodeIndex = currentNode.head;
-    // console.log(`prev:${previousNodeIndex}, current:${currentNodeIndex}`);
+
+
+function createNodes(currentNode, type) {
 
     // clear any existing choices first
     if (flowchartChoicesContainerEle.hasChildNodes()) {
@@ -77,111 +69,79 @@ function createChoices(currentNode) {
 
 
 
-    // change question
-    flowchartQuestionEle.innerHTML = currentNode.body;
 
 
-    // create choices nodes
-    for (var i = 0; i < currentNode.tail.length; i++) {
-        var spanNode = document.createElement("span");
-        spanNode.setAttribute("class", "flowchart-choice");
-        spanNode.setAttribute("data-choice-index", currentNode.tail[i].tail);
-        var spanText = document.createTextNode(currentNode.tail[i].fur);
-        spanNode.appendChild(spanText);
-
-        spanNode.addEventListener("click", function(e) {
-            var clickedEle = e.target;
-            var choiceIndex = clickedEle.dataset.choiceIndex; // html attr
-            
-            
-
-            var nextNode = getNextNode(choiceIndex);
-
-            // update global arr
-            questionsChosen_arr.push(currentNode.head);
-
-            if (nextNode.type === "q") {
-                // if question type
-                createChoices(nextNode);
-            }
-            else {
-                // if answer type
-                createAnswers(nextNode)
-            }
-        });
-
-        flowchartChoicesContainerEle.appendChild(spanNode);
-
-        fadeIn(spanNode);
-    }
+    // change question text
+    flowchartQuestionEle.innerHTML = (type === 'q') 
+        ? currentNode.ques 
+        : "here are the results";
 
 
 
-    // node fade in animation
-    function fadeIn(ele) {
-        var opacity = 0;
-        var id = setInterval(() => {
-            if (ele.style.opacity == 1) {
-                clearInterval(id);
-            }
-            else {
-                opacity += 0.02;
-                ele.style.opacity = opacity;
-            }
-        }, 10);
-    }
-}
-
-
-
-// create answer nodes
-function createAnswers(answerNode) {
-
-    // update global vals
-    previousNodeIndex = getPreviousIndex(currentNodeIndex);
-    currentNodeIndex = answerNode.head;
-
-
-    
-    // clear any existing choices first
-    if (flowchartChoicesContainerEle.hasChildNodes()) {
-        while (flowchartChoicesContainerEle.firstChild) {
-            flowchartChoicesContainerEle.removeChild(flowchartChoicesContainerEle.lastChild);
-        }
-    }
-
-
-
-    // change "question" text
-    flowchartQuestionEle.innerHTML = "here are the results";
 
 
     // create nodes
-    for (var i = 0; i < answerNode.tail.length; i++) {
-        var spanNode = document.createElement("span");
-        spanNode.setAttribute("class", "flowchart-choice");
-        spanNode.setAttribute("data-answer-title", answerNode.tail[i]);
-        var spanText = document.createTextNode(answerNode.tail[i]);
-        spanNode.appendChild(spanText);
 
-        spanNode.addEventListener("click", function(e) {
-            var clickedEle = e.target;
-            var animeTitle = clickedEle.dataset.answerTitle; // html attr
-            
-            
+    // create choices nodes
+    if (type === 'q') {
+        for (var i = 0; i < currentNode.tails.length; i++) {
+            var spanNode = document.createElement("span");
+            spanNode.setAttribute("class", "flowchart-choice");
+            spanNode.setAttribute("data-choice-index", currentNode.tails[i].tail);
+            var spanText = document.createTextNode(currentNode.tails[i].ans);
+            spanNode.appendChild(spanText);
+    
+            spanNode.addEventListener("click", function(e) {
+                var clickedEle = e.target;
+                var choiceIndex = clickedEle.dataset.choiceIndex; // html attr
+                
+                
+    
+                // update flowchart arr
+                questionsChosen_arr.push(currentNode.head);
+                
+                
+                
+                // create new nodes for next question / answer
+                var nextNode = getNextNode(choiceIndex);
 
-            // update global arr
-            questionsChosen_arr.push(answerNode.head);
+                createNodes(nextNode, nextNode.type);
+            });
+    
+            flowchartChoicesContainerEle.appendChild(spanNode);
+    
+            fadeIn(spanNode);
+        }
+    }
 
-
-
-            // create the results
-            createResults(animeTitle);
-        });
-
-        flowchartChoicesContainerEle.appendChild(spanNode);
-
-        fadeIn(spanNode);
+    // else create results nodes
+    else {
+        for (var i = 0; i < currentNode.tails.length; i++) {
+            var spanNode = document.createElement("span");
+            spanNode.setAttribute("class", "flowchart-choice");
+            spanNode.setAttribute("data-answer-title", currentNode.tails[i]);
+            var spanText = document.createTextNode(currentNode.tails[i]);
+            spanNode.appendChild(spanText);
+    
+            spanNode.addEventListener("click", function(e) {
+                var clickedEle = e.target;
+                var animeTitle = clickedEle.dataset.answerTitle; // html attr
+                
+                
+    
+                // update flowchart arr
+                questionsChosen_arr.push(currentNode.head);
+    
+    
+    
+                // create the result
+                createResult(animeTitle);
+            });
+    
+            flowchartChoicesContainerEle.appendChild(spanNode);
+    
+            fadeIn(spanNode);
+        }
     }
 
 
@@ -203,8 +163,10 @@ function createAnswers(answerNode) {
 
 
 
-// create the results
-function createResults(animeTitle) {
+
+
+// create the result
+function createResult(animeTitle) {
 
     // clear any existing choices first
     if (flowchartChoicesContainerEle.hasChildNodes()) {
@@ -213,7 +175,9 @@ function createResults(animeTitle) {
         }
     }
 
-    // get and display anime data
+
+
+    // get and display anime data from Jikan API
     jikanGetAnime(animeTitle);
 
 
@@ -223,23 +187,6 @@ function createResults(animeTitle) {
 }
 
 
-
-// get previous node
-function getPreviousIndex(targetIndex) {
-    for (var i = 0; i < flowchart.length; i++) {
-        // flowchart index
-
-        for (var j = 0; j < flowchart[i].tail.length; j++) {
-            // tail index
-
-            if (flowchart[i].tail[j].tail == targetIndex) {
-                return flowchart[i].head;
-            }
-        }
-    }
-
-    return -1;
-}
 
 
 
@@ -274,6 +221,9 @@ function jikanGetAnime(animeTitle) {
     flowchartChoicesContainerEle.append(spinDivNode);
 
 
+
+
+
     // https://jikan.docs.apiary.io/#reference/0/search
     fetch(`https://api.jikan.moe/v3/search/anime?q=${animeTitle}&limit=3`)
     .then(function (response) {
@@ -290,7 +240,7 @@ function jikanGetAnime(animeTitle) {
 
 
 
-        // create anime node(s)
+        // create anime nodes
         for (var i = 0; i < result.results.length; i++) {
             // anime container
             var animeNode = document.createElement("div");
