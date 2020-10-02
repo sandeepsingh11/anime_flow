@@ -31,8 +31,8 @@
     #flowchart-choices-container
         justify-content: center
         align-content: center
-        // view height - #flowchart-question-container padding - font-size - line-height
-        min-height: calc(100vh - 10vh - 2rem - 1.15rem)
+        // view height - #flowchart-question-container padding - question span height - nav height
+        min-height: calc(100vh - 10vh - 46px - 50px)
         height: auto
         padding: 1rem 3.5rem
 
@@ -63,7 +63,7 @@
             .anime-title
                 font-size: 1rem
                 margin: 0
-                padding: 0.5rem 0.25rem
+                padding: 0.25rem
     
 
     #flowchart-back-container
@@ -89,6 +89,20 @@
                 &:hover
                     cursor: pointer
                     color: salmon
+
+
+#nav-container
+    height: 50px
+
+    #nav-wrapper
+        height: 100%
+        justify-content: space-between
+        align-content: center
+
+        #logo
+            padding-left: 1.5rem
+            font-size: 1.25rem
+            font-family: 'Sansation-Bold', $sans-serif
 
 
 
@@ -129,3 +143,12 @@
             #flowchart-back
                 #back
                     padding: 0.5rem 0.25rem
+
+
+    #nav-container
+
+        #nav-wrapper
+            justify-content: center
+
+            #logo
+                padding-left: 0

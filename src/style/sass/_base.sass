@@ -1,5 +1,25 @@
+// fonts
+@font-face
+    font-family: 'Sansation'
+    src: url('../../assets/sansation/Sansation-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    src: url('../../assets/sansation/Sansation-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    src: url('../../assets/sansation/Sansation-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+@font-face
+    font-family: 'Sansation-Bold'
+    src: url('../../assets/sansation/Sansation-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    src: url('../../assets/sansation/Sansation-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    src: url('../../assets/sansation/Sansation-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+    
+    
+    
+    
+
 // sass vars
 $color-1: #F3A257
+
+$sans-serif: Candera, Calibri, 'Segoe UI', Noto Sans, Arial, sans-serif
+$serif: Cambria, Lucida, Perpetua, Times, Times New Roman, serif
 
 
 $mobile-screen: 430px
@@ -25,6 +45,11 @@ $tablet-screen: 768px
 
 
 
+body
+    font-family: $serif
+
+    
+    
 .flex
     display: flex
     flex-wrap: wrap

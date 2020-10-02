@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Sansation';
+  src: url("../../assets/sansation/Sansation-Regular.woff2") format("woff2");
+  src: url("../../assets/sansation/Sansation-Regular.woff") format("woff");
+  src: url("../../assets/sansation/Sansation-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Sansation-Bold';
+  src: url("../../assets/sansation/Sansation-Bold.woff2") format("woff2");
+  src: url("../../assets/sansation/Sansation-Bold.woff") format("woff");
+  src: url("../../assets/sansation/Sansation-Bold.ttf") format("truetype"); }
+
 * {
   box-sizing: border-box; }
 
@@ -8,6 +20,9 @@
 @media only screen and (max-width: 430px) {
   :root {
     font-size: 18px; } }
+
+body {
+  font-family: Cambria, Lucida, Perpetua, Times, Times New Roman, serif; }
 
 .flex {
   display: flex;
@@ -63,7 +78,7 @@
   #flowchart-wrapper #flowchart-choices-container {
     justify-content: center;
     align-content: center;
-    min-height: calc(100vh - 10vh - 2rem - 1.15rem);
+    min-height: calc(100vh - 10vh - 46px - 50px);
     height: auto;
     padding: 1rem 3.5rem; }
     #flowchart-wrapper #flowchart-choices-container .anime {
@@ -88,7 +103,7 @@
       #flowchart-wrapper #flowchart-choices-container .anime .anime-title {
         font-size: 1rem;
         margin: 0;
-        padding: 0.5rem 0.25rem; }
+        padding: 0.25rem; }
   #flowchart-wrapper #flowchart-back-container {
     position: fixed;
     top: 0;
@@ -105,6 +120,17 @@
         cursor: pointer;
         color: salmon; }
 
+#nav-container {
+  height: 50px; }
+  #nav-container #nav-wrapper {
+    height: 100%;
+    justify-content: space-between;
+    align-content: center; }
+    #nav-container #nav-wrapper #logo {
+      padding-left: 1.5rem;
+      font-size: 1.25rem;
+      font-family: "Sansation-Bold", Candera, Calibri, "Segoe UI", Noto Sans, Arial, sans-serif; }
+
 @media only screen and (max-width: 768px) {
   #flowchart-wrapper #flowchart-choices-container {
     padding: 1rem 32px; } }
@@ -115,7 +141,11 @@
   #flowchart-wrapper #flowchart-back-container {
     left: -6px; }
     #flowchart-wrapper #flowchart-back-container #flowchart-back #back {
-      padding: 0.5rem 0.25rem; } }
+      padding: 0.5rem 0.25rem; }
+  #nav-container #nav-wrapper {
+    justify-content: center; }
+    #nav-container #nav-wrapper #logo {
+      padding-left: 0; } }
 
 .on {
   opacity: 1; }
