@@ -22,26 +22,31 @@
     font-size: 18px; } }
 
 body {
+  width: 100%;
+  height: 100%;
   font-family: Cambria, Lucida, Perpetua, Times, Times New Roman, serif; }
 
 .flex {
   display: flex;
   flex-wrap: wrap; }
 
-.flowchart-choice {
-  background-color: transparent;
-  margin: 0.5rem;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 0.75rem;
-  text-align: center;
-  font-size: 1.2rem;
-  opacity: 0;
-  transition: transform 0.1s; }
-  .flowchart-choice:hover {
+.button {
+  display: inline-block;
+  background-color: #F3A257;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 12px;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.2s; }
+  .button:hover {
     cursor: pointer;
-    background-color: salmon;
-    transform: scale(1.03, 1.03); }
+    background-color: #E16F9F; }
+
+.button-primary {
+  background-color: #F3A257; }
+  .button-primary:hover {
+    background-color: #E16F9F; }
 
 #flowchart-container {
   width: 100vw;
@@ -50,6 +55,27 @@ body {
   position: relative;
   background-color: #f3a257;
   background: linear-gradient(180deg, #f3a257 0%, #f4a344 100%); }
+
+#hero-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #5D49A8;
+  justify-content: center;
+  align-content: center;
+  color: white; }
+
+.square-container .square {
+  width: 50%; }
+
+.square-container .square-text-container {
+  padding: 4rem; }
+  .square-container .square-text-container .square-text {
+    margin: 0;
+    line-height: 3.2; }
+
+.footnote {
+  font-size: 0.75rem;
+  opacity: .75; }
 
 #flowchart-wrapper {
   height: auto; }
@@ -81,6 +107,20 @@ body {
     min-height: calc(100vh - 10vh - 46px - 50px);
     height: auto;
     padding: 1rem 3.5rem; }
+    #flowchart-wrapper #flowchart-choices-container .flowchart-choice {
+      background-color: transparent;
+      margin: 0.5rem;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 0.75rem;
+      text-align: center;
+      font-size: 1.2rem;
+      opacity: 0;
+      transition: transform 0.1s; }
+      #flowchart-wrapper #flowchart-choices-container .flowchart-choice:hover {
+        cursor: pointer;
+        background-color: salmon;
+        transform: scale(1.03, 1.03); }
     #flowchart-wrapper #flowchart-choices-container .anime {
       width: 225px;
       margin: 0.5rem;
@@ -130,6 +170,33 @@ body {
       padding-left: 1.5rem;
       font-size: 1.25rem;
       font-family: "Sansation-Bold", Candera, Calibri, "Segoe UI", Noto Sans, Arial, sans-serif; }
+
+#hero-wrapper #hero-title {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-family: "Sansation-Bold", Candera, Calibri, "Segoe UI", Noto Sans, Arial, sans-serif; }
+
+#hero-wrapper #hero-subtitle {
+  margin: 0.5rem 0 1.75rem;
+  font-size: 1.1rem;
+  font-style: italic; }
+
+#about-wrapper {
+  background-color: white; }
+  #about-wrapper .square {
+    position: relative; }
+    #about-wrapper .square .square-text {
+      margin-bottom: 5px; }
+    #about-wrapper .square .footnote {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      padding: 0 4rem; }
+    #about-wrapper .square .square-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 @media only screen and (max-width: 768px) {
   #flowchart-wrapper #flowchart-choices-container {
