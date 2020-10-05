@@ -8,7 +8,7 @@
 
         .square-text
             margin: 0
-            line-height: 3.2
+            line-height: 3
 
 
 
@@ -149,21 +149,20 @@
 #hero-wrapper
 
     #hero-title
-        margin-bottom: 0.5rem
+        margin-bottom: 0.25rem
         font-size: 2.5rem
         font-family: 'Sansation-Bold', $sans-serif
 
     #hero-subtitle
-        margin: 0.5rem 0 1.75rem
+        margin: 0.25rem 0 1.75rem
         font-size: 1.1rem
         font-style: italic
+        font-weight: 400
 
 
 
-#about-wrapper
-    background-color: white
-
-
+#about-wrapper,
+#tech-wrapper
     .square
         position: relative
 
@@ -184,16 +183,52 @@
 
 
 
+#about-wrapper
+    background-color: white
+
+#tech-wrapper
+    background-color: $color-2
+    color: white
+
+
+
 
 
 
 
 // tablet
 @media only screen and (max-width: $tablet-screen)
-    #flowchart-wrapper
+    .square-container
+        .square
+            width: 100%
 
+
+
+    #flowchart-wrapper
         #flowchart-choices-container
             padding: 1rem 32px // 32px for the "back" svg
+
+
+
+    #about-wrapper,
+    #tech-wrapper
+        .square
+            .square-text-container
+                .square-text
+                    line-height: 2.25
+
+            .footnote
+                bottom: 0
+                padding: 0 2rem
+                
+
+    #about-wrapper
+        .square-text-container
+            padding: 6rem 2rem
+
+    #tech-wrapper
+        .square-text-container
+            padding: 4rem 2rem
 
 
 
