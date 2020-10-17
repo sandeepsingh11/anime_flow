@@ -54,7 +54,15 @@ body {
   min-height: 100vh;
   position: relative;
   background-color: #f3a257;
-  background: linear-gradient(180deg, #dc8331 0%, #f3a257 100%); }
+  background-image: linear-gradient(90deg, #dcbd31 0%, #dc8331 50%, #f3a257 100%);
+  background-size: 400%;
+  animation: anime 50s infinite alternate; }
+
+@keyframes anime {
+  0% {
+    background-position: right; }
+  100% {
+    background-position: left; } }
 
 #hero-container {
   width: 100%;

@@ -6,7 +6,16 @@
     background-color: rgb(243,162,87) // background-color: $color-1
     // #F3A257 ($color-1)
     // #f4ab55
-    background: linear-gradient(180deg, rgba(220,131,49,1) 0%, rgba(243,162,87,1) 100%)
+    // background: linear-gradient(180deg, rgba(220,131,49,1) 0%, rgba(243,162,87,1) 100%)
+    background-image: linear-gradient(90deg, rgba(220,189,49,1) 0%, rgba(220,131,49,1) 50%, rgba(243,162,87,1) 100%)
+    background-size: 400%
+    animation: anime 50s infinite alternate
+
+@keyframes anime
+    0%
+        background-position: right
+    100%
+        background-position: left
 
 
 
