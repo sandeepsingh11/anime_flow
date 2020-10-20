@@ -10,6 +10,8 @@ var sourcemaps = require('gulp-sourcemaps'); // https://github.com/gulp-sourcema
 var autoprefixer = require('autoprefixer'); // https://github.com/postcss/autoprefixer#gulp
 var cssnano = require('cssnano'); // https://github.com/cssnano/cssnano
 
+var changed = require('gulp-changed'); // https://github.com/sindresorhus/gulp-changed
+
 
 
 
@@ -49,9 +51,40 @@ gulp.task('js', function() {
 });
 
 
+// update html file in production
+gulp.task('html', function() {
+    // use gulp-changed
+
+    return gulp.src('src/index.html')
+        .pipe(changed('netlify/index.html'))
+        .pipe(gulp.dest('netlify/'))
+});
+
+
+// update assets in production
+gulp.task('ass', function() {
+    // use gulp-changed
+
+    return gulp.src('src/assets/')
+        .pipe(changed('netlify/assets/'))
+        .pipe(gulp.dest('netlify/assets/'))
+});
+
+
+// update flowchart_mapping in production
+gulp.task('flowchart', function() {
+    // use gulp-changed
+
+    return gulp.src('src/flowchart_mapping.json')
+        .pipe(changed('netlify/flowchart_mapping.json'))
+        .pipe(gulp.dest('netlify/flowchart_mapping.json'))
+});
+
+
+
 // build js and css for production
-gulp.task('build', gulp.series(['js', 'css']), function() {
-    console.log('Building filezz');
+gulp.task('build', gulp.series(['js', 'css', 'html', 'ass', 'flowchart']), function() {
+    console.log('Building filezz :pog:');
 });
 
 
@@ -65,6 +98,22 @@ gulp.task('build-js', gulp.series(['js']), function() {
 gulp.task('build-css', gulp.series(['css']), function() {
     console.log('Building css');
 });
+
+// build html only for production
+gulp.task('build-html', gulp.series(['html']), function() {
+    console.log('Building html');
+});
+
+// build assets only for production
+gulp.task('build-ass', gulp.series(['ass']), function() {
+    console.log('Building ass');
+});
+
+// build flowchart only for production
+gulp.task('build-flowchart', gulp.series(['flowchart']), function() {
+    console.log('Building flowchart');
+});
+
 
 
 // watch sass files to compile on save
