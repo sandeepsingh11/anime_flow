@@ -216,6 +216,36 @@ body {
   background-color: #5D49A8;
   color: white; }
 
+#steps-wrapper {
+  background-color: #B9ED75;
+  justify-content: space-evenly;
+  padding: 5rem 5rem 2rem; }
+  #steps-wrapper .step {
+    position: relative;
+    width: 315px;
+    margin: 0.75rem; }
+    #steps-wrapper .step .step-title {
+      margin-bottom: 0.4rem;
+      font-family: Candera, Calibri, "Segoe UI", Noto Sans, Arial, sans-serif;
+      font-size: 1.4rem; }
+    #steps-wrapper .step .step-desc {
+      line-height: 2; }
+    #steps-wrapper .step .arrow-img {
+      position: absolute;
+      width: 40px;
+      height: 40px; }
+    #steps-wrapper .step #arrow-1 {
+      top: -40px;
+      right: 0;
+      transform: rotate(225deg); }
+    #steps-wrapper .step #arrow-2 {
+      bottom: -40px;
+      right: 0;
+      transform: rotate(315deg); }
+  #steps-wrapper .footnote {
+    margin-top: 3rem;
+    line-height: 1.5; }
+
 @media only screen and (max-width: 768px) {
   .square-container .square {
     width: 100%; }
@@ -231,7 +261,22 @@ body {
   #about-wrapper .square-text-container {
     padding: 6rem 2rem; }
   #tech-wrapper .square-text-container {
-    padding: 4rem 2rem; } }
+    padding: 4rem 2rem; }
+  #steps-wrapper {
+    padding: 3rem 3rem 2rem; }
+    #steps-wrapper .step {
+      margin: 1.5rem 0.75rem; }
+      #steps-wrapper .step #arrow-1 {
+        top: unset;
+        bottom: -50px;
+        right: -50px;
+        transform: rotate(315deg); }
+      #steps-wrapper .step #arrow-2 {
+        bottom: -50px;
+        left: -50px;
+        transform: rotate(45deg); }
+    #steps-wrapper .footnote {
+      margin: 2rem 4rem 0; } }
 
 @media only screen and (max-width: 430px) {
   #flowchart-wrapper #flowchart-question-container {
@@ -243,7 +288,15 @@ body {
   #nav-container #nav-wrapper {
     justify-content: center; }
     #nav-container #nav-wrapper #logo {
-      padding-left: 0; } }
+      padding-left: 0; }
+  #steps-wrapper {
+    padding: 3rem 0 2rem; }
+    #steps-wrapper .step #arrow-1 {
+      right: -25px; }
+    #steps-wrapper .step #arrow-2 {
+      left: -25px; }
+    #steps-wrapper .footnote {
+      margin: 2rem 1rem 0; } }
 
 .desktop {
   display: block; }
