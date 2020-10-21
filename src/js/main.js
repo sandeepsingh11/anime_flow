@@ -20,6 +20,29 @@ xmlhttp.send();
 
 
 
+// hide "back" arrow when scroll past flowchart
+var winHeight = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+
+window.addEventListener("scroll", function() {
+    var currentHeight = document.body.scrollTop 
+    || document.documentElement.scrollTop;
+
+    var backEle = document.getElementById("flowchart-back-container");
+    if ( (currentHeight + 50) >= winHeight ) {
+        backEle.style.display = "none";
+    }
+    else {
+        backEle.style.display = "block";
+    }
+});
+
+
+
+
+
 // keep track of flowchart ans
 var questionsChosen_arr = [];
 
