@@ -63,6 +63,19 @@ body
 
 
 
+a
+    border-bottom: 2px solid $color-3
+    text-underline-position: under
+    text-decoration: none
+    color: inherit
+    transition: border-bottom 0.3s
+
+    &:hover,
+    &:focus
+        border-bottom: 5px solid $color-3
+
+
+
 .button
     display: inline-block
     background-color: $color-1
@@ -73,13 +86,16 @@ body
     text-decoration: none
     transition: background-color 0.2s
 
-    &:hover
+    &:hover,
+    &:focus
         cursor: pointer
         background-color: $color-1_hover
+        border: none
 
 
 .button-primary
     background-color: $color-1
 
-    &:hover
+    &:hover,
+    &:focus
         background-color: $color-1_hover

@@ -222,15 +222,31 @@
             transform: rotate(315deg)
 
 
-#footnotes-wrapper
-    background-color: white
-    padding: 0.5rem
+#footer-wrapper
+    padding: 1rem 1.5rem 1.5rem
+    font-size: 0.9rem
 
-    .footnote
-        margin-bottom: 0.5rem
+    #footnotes-container
+        margin: 0.5rem auto 1.5rem
 
-        &:last-child
-            margin-bottom: 0
+        .footnote
+            margin-bottom: 0.75rem
+
+            &:last-child
+                margin-bottom: 0
+
+    #footer-items
+        justify-content: space-between
+
+        .footer-info
+            width: 175px
+
+            &:nth-child(2)
+                text-align: center
+
+            &:nth-child(3)
+                text-align: right
+
 
 
 

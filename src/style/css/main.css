@@ -30,6 +30,15 @@ body {
   display: flex;
   flex-wrap: wrap; }
 
+a {
+  border-bottom: 2px solid #B9ED75;
+  text-underline-position: under;
+  text-decoration: none;
+  color: inherit;
+  transition: border-bottom 0.3s; }
+  a:hover, a:focus {
+    border-bottom: 5px solid #B9ED75; }
+
 .button {
   display: inline-block;
   background-color: #F3A257;
@@ -39,13 +48,14 @@ body {
   color: black;
   text-decoration: none;
   transition: background-color 0.2s; }
-  .button:hover {
+  .button:hover, .button:focus {
     cursor: pointer;
-    background-color: #E16F9F; }
+    background-color: #E16F9F;
+    border: none; }
 
 .button-primary {
   background-color: #F3A257; }
-  .button-primary:hover {
+  .button-primary:hover, .button-primary:focus {
     background-color: #E16F9F; }
 
 #flowchart-container {
@@ -238,13 +248,23 @@ body {
       right: 0;
       transform: rotate(315deg); }
 
-#footnotes-wrapper {
-  background-color: white;
-  padding: 0.5rem; }
-  #footnotes-wrapper .footnote {
-    margin-bottom: 0.5rem; }
-    #footnotes-wrapper .footnote:last-child {
-      margin-bottom: 0; }
+#footer-wrapper {
+  padding: 1rem 1.5rem 1.5rem;
+  font-size: 0.9rem; }
+  #footer-wrapper #footnotes-container {
+    margin: 0.5rem auto 1.5rem; }
+    #footer-wrapper #footnotes-container .footnote {
+      margin-bottom: 0.75rem; }
+      #footer-wrapper #footnotes-container .footnote:last-child {
+        margin-bottom: 0; }
+  #footer-wrapper #footer-items {
+    justify-content: space-between; }
+    #footer-wrapper #footer-items .footer-info {
+      width: 175px; }
+      #footer-wrapper #footer-items .footer-info:nth-child(2) {
+        text-align: center; }
+      #footer-wrapper #footer-items .footer-info:nth-child(3) {
+        text-align: right; }
 
 @media only screen and (max-width: 768px) {
   .square-container .square {
