@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the next anime to watch on Anime Flow! Inspired by lukeatlook's anime recommendation flowchart, this is the web version of said flowchart.">
+    <meta name="description" content="Discover the next anime to watch on Anime Flow! Inspired by lukeatlook's anime flowchart, Anime Flow is the web version of said flowchart.">
+
+    <meta property="og:title" content="Anime Flow">
+    <meta property="og:image" content="./assets/flowchart_preview.min.png">
+    <meta property="og:description" content="Discover anime via a flowchart.  Inspired by lukeatlook's anime recommendation flowchart">
+    <meta property="og:url" content="https://jolly-bose-3d51bb.netlify.app/">
+    <meta name="twitter:card" content="summary">
+
     <link rel="shortcut icon" href="./assets/anime_flow.ico" />
     <title>Anime Flow</title>
 
@@ -14,9 +21,35 @@
 <body>
 
     <main>
-        <!-- flowchart -->
+        <!-- flowchart container -->
         <div id="flowchart-container">
+
+            <!-- flowchart -->
             <div id="flowchart-wrapper">
+
+                <!-- blobs -->
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" id="blob-wrapper-1" class="blob-wrapper">
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+                            <stop offset="100%" style="stop-color: rgb(243, 162, 87);"></stop>
+                        </linearGradient>
+                    </defs>
+
+                    <path id="blob1" class="blob" d="M384.5,354Q318,458,200,415Q82,372,76.5,246Q71,120,198.5,67.5Q326,15,388.5,132.5Q451,250,384.5,354Z" fill="url(#gradient1)"></path>
+                </svg>
+
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" id="blob-wrapper-2" class="blob-wrapper">
+                    <defs>
+                        <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+                            <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+                        </linearGradient>
+                    </defs>
+
+                    <path id="blob2" class="blob" d="M406,357.5Q320,465,197.5,421Q75,377,71,247Q67,117,194.5,72Q322,27,407,138.5Q492,250,406,357.5Z" fill="url(#gradient2)"></path>
+                </svg>
+
 
                 <!-- question -->
                 <div id="flowchart-question-container">
@@ -118,16 +151,6 @@
                 <div class="step-desc"> After selecting an anime, Anime Flow will fetch the url** to view it on MyAnimeList!</div>
             </div>
         </div>        
-    </div>
-
-
-
-
-    <!-- footnotes -->
-    <div id="footnotes-container">
-        <div id="footnotes-wrapper">
-            
-        </div>
     </div>
 
 

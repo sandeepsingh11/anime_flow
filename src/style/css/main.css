@@ -14,8 +14,9 @@
   box-sizing: border-box; }
 
 :root {
-  background-color: #F3A257;
-  font-size: 20px; }
+  background-color: #5D49A8;
+  font-size: 20px;
+  color: #333; }
 
 @media only screen and (max-width: 480px) {
   :root {
@@ -63,12 +64,14 @@ a {
   max-width: 100%;
   min-height: 100vh;
   position: relative;
-  background-color: #f3a257;
-  background-image: linear-gradient(90deg, #dcbd31 0%, #dc8331 50%, #f3a257 100%);
+  background-color: #5d49a8;
+  background-image: linear-gradient(90deg, #42328d 0%, #251c73 100%);
   background-size: 400%;
-  animation: anime 50s infinite alternate; }
+  color: #eee;
+  overflow: hidden;
+  animation: bg-color 50s infinite alternate; }
 
-@keyframes anime {
+@keyframes bg-color {
   0% {
     background-position: right; }
   100% {
@@ -80,9 +83,43 @@ a {
   background-color: #5D49A8;
   justify-content: center;
   align-content: center;
+  border-top: 3px solid #F3A257;
+  border-bottom: 3px solid #F3A257;
   color: white; }
 
 /* ================== general classes ================== /* */
+.blob {
+  animation-name: hover;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+@keyframes hover {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(20px); } }
+
+.blob-wrapper {
+  position: absolute;
+  width: 400px;
+  opacity: 0.5;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+#blob-wrapper-1 {
+  animation-duration: 12s; }
+
+#blob-wrapper-2 {
+  animation-duration: 10s; }
+
 .square-container .square {
   width: 50%; }
 
@@ -94,7 +131,7 @@ a {
 
 .footnote {
   font-size: 0.75rem;
-  opacity: .75; }
+  opacity: .8; }
 
 /* ================== module styles ================== /* */
 #flowchart-wrapper {
@@ -105,16 +142,22 @@ a {
     border: 8px solid whitesmoke;
     border-top: 8px solid black;
     border-radius: 50%;
-    animation-name: spin;
+    animation-name: spinner;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear; }
 
-@keyframes spin {
+@keyframes spinner {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+  #flowchart-wrapper #blob-wrapper-1 {
+    top: -100px;
+    right: -100px; }
+  #flowchart-wrapper #blob-wrapper-2 {
+    bottom: -100px;
+    left: -100px; }
   #flowchart-wrapper #flowchart-question-container {
     padding: 5vh 0; }
     #flowchart-wrapper #flowchart-question-container #flowchart-question {
@@ -130,40 +173,47 @@ a {
     #flowchart-wrapper #flowchart-choices-container .flowchart-choice {
       background-color: transparent;
       margin: 0.5rem;
-      border: 2px solid black;
+      border: 2px solid #eee;
       border-radius: 5px;
       padding: 0.75rem;
       text-align: center;
       font-size: 1.2rem;
       opacity: 0;
+      z-index: 5;
       transition: transform 0.1s; }
       #flowchart-wrapper #flowchart-choices-container .flowchart-choice:hover {
         cursor: pointer;
-        background-color: salmon;
+        background-color: #F3A257;
+        border: 2px solid #222;
+        color: #222;
         transform: scale(1.03, 1.03); }
     #flowchart-wrapper #flowchart-choices-container .anime {
       width: 225px;
       margin: 0.5rem;
-      border: 2px solid black;
+      border: 2px solid #222;
       border-radius: 3px;
-      box-shadow: 2px 3px 8px black;
+      box-shadow: 2px 3px 8px #222;
+      z-index: 5;
       transition: transform 0.2s; }
       #flowchart-wrapper #flowchart-choices-container .anime:hover {
-        background-color: salmon;
+        background-color: #F3A257;
         transform: translateX(5px); }
+        #flowchart-wrapper #flowchart-choices-container .anime:hover .anime-title {
+          color: #222; }
       #flowchart-wrapper #flowchart-choices-container .anime .anime-image {
         display: block;
         width: 100%;
         height: 320px;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid #222;
         object-fit: cover; }
       #flowchart-wrapper #flowchart-choices-container .anime .anime-link {
         text-decoration: none;
-        color: black; }
+        color: #222; }
       #flowchart-wrapper #flowchart-choices-container .anime .anime-title {
         font-size: 1rem;
         margin: 0;
-        padding: 0.25rem; }
+        padding: 0.33rem 0.25rem;
+        color: #eee; }
   #flowchart-wrapper #flowchart-back-container {
     position: fixed;
     top: 0;
@@ -181,7 +231,10 @@ a {
         color: salmon; }
 
 #nav-container {
-  height: 50px; }
+  position: relative;
+  height: 50px;
+  color: white;
+  z-index: 5; }
   #nav-container #nav-wrapper {
     height: 100%;
     justify-content: space-between;
@@ -232,7 +285,8 @@ a {
     #steps-wrapper .step .step-title {
       margin-bottom: 0.4rem;
       font-family: Candera, Calibri, "Segoe UI", Noto Sans, Arial, sans-serif;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      color: #111; }
     #steps-wrapper .step .step-desc {
       line-height: 2; }
     #steps-wrapper .step .arrow-img {
@@ -249,8 +303,10 @@ a {
       transform: rotate(315deg); }
 
 #footer-wrapper {
+  background-color: #42328D;
   padding: 1rem 1.5rem 1.5rem;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  color: #eee; }
   #footer-wrapper #footnotes-container {
     margin: 0.5rem auto 1.5rem; }
     #footer-wrapper #footnotes-container .footnote {
@@ -287,13 +343,19 @@ a {
       #steps-wrapper .step #arrow-2 {
         bottom: -50px;
         left: -50px;
-        transform: rotate(45deg); } }
+        transform: rotate(45deg); }
+  #footer-wrapper #footer-items .footer-info {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center !important; } }
 
 @media only screen and (max-width: 480px) {
   .square-container .square-text-container {
     padding: 2rem; }
   #flowchart-wrapper #flowchart-question-container {
-    padding: 1rem 10px; }
+    position: relative;
+    padding: 1rem 10px;
+    z-index: 5; }
   #flowchart-wrapper #flowchart-back-container {
     left: -6px; }
     #flowchart-wrapper #flowchart-back-container #flowchart-back #back {
