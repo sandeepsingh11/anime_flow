@@ -109,7 +109,7 @@ function createNodes(currentNode, type) {
     if (type === 'q') {
         for (var i = 0; i < currentNode.tails.length; i++) {
             var spanNode = document.createElement("span");
-            spanNode.setAttribute("class", "flowchart-choice");
+            spanNode.setAttribute("class", "button flowchart-button");
             spanNode.setAttribute("data-choice-index", currentNode.tails[i].tail);
             var spanText = document.createTextNode(currentNode.tails[i].ans);
             spanNode.appendChild(spanText);
@@ -141,7 +141,7 @@ function createNodes(currentNode, type) {
     else {
         for (var i = 0; i < currentNode.tails.length; i++) {
             var spanNode = document.createElement("span");
-            spanNode.setAttribute("class", "flowchart-choice");
+            spanNode.setAttribute("class", "button flowchart-button");
             spanNode.setAttribute("data-answer-title", currentNode.tails[i]);
             var spanText = document.createTextNode(currentNode.tails[i]);
             spanNode.appendChild(spanText);

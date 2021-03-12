@@ -36,23 +36,29 @@ a {
   text-underline-position: under;
   text-decoration: none;
   color: inherit;
-  transition: border-bottom 0.3s; }
+  transition: border-bottom 0.2s; }
   a:hover, a:focus {
-    border-bottom: 5px solid #B9ED75; }
+    border-bottom: 6px solid #B9ED75; }
 
 .button {
-  display: inline-block;
-  background-color: #F3A257;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 10px 12px;
   color: black;
-  text-decoration: none;
-  transition: background-color 0.2s; }
+  text-align: center;
+  text-decoration: none; }
   .button:hover, .button:focus {
     cursor: pointer;
-    background-color: #E16F9F;
     border: none; }
+
+.body-button {
+  display: inline-block;
+  background-color: #F3A257;
+  transition: background-color, transform 0.1s; }
+  .body-button:hover, .body-button:focus {
+    background-color: #E16F9F;
+    color: white;
+    transform: scale(1.04, 1.04); }
 
 .button-primary {
   background-color: #F3A257; }
@@ -79,13 +85,21 @@ a {
 
 #hero-container {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh + 2rem);
   background-color: #5D49A8;
   justify-content: center;
   align-content: center;
   border-top: 3px solid #F3A257;
   border-bottom: 3px solid #F3A257;
   color: white; }
+
+#about-container,
+#tech-container,
+#steps-container {
+  height: 95vh; }
+
+#steps-container {
+  background-color: #B9ED75; }
 
 /* ================== general classes ================== /* */
 .blob {
@@ -124,10 +138,14 @@ a {
   width: 50%; }
 
 .square-container .square-text-container {
-  padding: 4rem; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; }
   .square-container .square-text-container .square-text {
-    margin: 0;
-    line-height: 3; }
+    margin: 0; }
+    .square-container .square-text-container .square-text .text {
+      line-height: 3; }
 
 .footnote {
   font-size: 0.75rem;
@@ -170,19 +188,17 @@ a {
     min-height: calc(100vh - 10vh - 46px - 50px);
     height: auto;
     padding: 1rem 3.5rem; }
-    #flowchart-wrapper #flowchart-choices-container .flowchart-choice {
+    #flowchart-wrapper #flowchart-choices-container .flowchart-button {
       background-color: transparent;
+      color: white;
       margin: 0.5rem;
       border: 2px solid #eee;
-      border-radius: 5px;
       padding: 0.75rem;
-      text-align: center;
       font-size: 1.2rem;
       opacity: 0;
       z-index: 5;
       transition: transform 0.1s; }
-      #flowchart-wrapper #flowchart-choices-container .flowchart-choice:hover {
-        cursor: pointer;
+      #flowchart-wrapper #flowchart-choices-container .flowchart-button:hover {
         background-color: #F3A257;
         border: 2px solid #222;
         color: #222;
@@ -255,17 +271,24 @@ a {
   font-style: italic;
   font-weight: 400; }
 
-#about-wrapper .square,
-#tech-wrapper .square {
-  position: relative; }
-  #about-wrapper .square .square-text,
-  #tech-wrapper .square .square-text {
-    margin-bottom: 10px; }
-  #about-wrapper .square .square-image,
-  #tech-wrapper .square .square-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+#about-wrapper,
+#tech-wrapper {
+  height: 100%; }
+  #about-wrapper .square,
+  #tech-wrapper .square {
+    position: relative;
+    height: inherit; }
+    #about-wrapper .square .square-text,
+    #tech-wrapper .square .square-text {
+      width: 85%; }
+      #about-wrapper .square .square-text .text,
+      #tech-wrapper .square .square-text .text {
+        margin-bottom: 10px; }
+    #about-wrapper .square .square-image,
+    #tech-wrapper .square .square-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 #about-wrapper {
   background-color: white; }
@@ -275,9 +298,12 @@ a {
   color: white; }
 
 #steps-wrapper {
-  background-color: #B9ED75;
+  align-content: center;
+  align-items: center;
   justify-content: space-evenly;
-  padding: 5rem; }
+  width: 85%;
+  height: inherit;
+  margin: auto; }
   #steps-wrapper .step {
     position: relative;
     width: 30%;
@@ -304,7 +330,7 @@ a {
 
 #footer-wrapper {
   background-color: #42328D;
-  padding: 1rem 1.5rem 1.5rem;
+  padding: 1.5rem;
   font-size: 0.9rem;
   color: #eee; }
   #footer-wrapper #footnotes-container {
@@ -327,8 +353,8 @@ a {
     width: 100%; }
   #flowchart-wrapper #flowchart-choices-container {
     padding: 1rem 32px; }
-  #about-wrapper .square .square-text-container .square-text,
-  #tech-wrapper .square .square-text-container .square-text {
+  #about-wrapper .square .square-text-container .square-text .text,
+  #tech-wrapper .square .square-text-container .square-text .text {
     line-height: 2.25; }
   #steps-wrapper {
     padding: 3rem 3rem 2rem; }

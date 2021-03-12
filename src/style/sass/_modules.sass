@@ -40,11 +40,17 @@
 
     
     .square-text-container
-        padding: 4rem
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        // padding: 4rem
 
         .square-text
             margin: 0
-            line-height: 3
+
+            .text
+                line-height: 3
 
 
 
@@ -105,20 +111,18 @@
         padding: 1rem 3.5rem
 
 
-        .flowchart-choice
+        .flowchart-button
             background-color: transparent
+            color: white
             margin: 0.5rem
             border: 2px solid #eee
-            border-radius: 5px
             padding: 0.75rem
-            text-align: center
             font-size: 1.2rem
             opacity: 0
             z-index: 5
             transition: transform 0.1s
 
             &:hover
-                cursor: pointer
                 background-color: $color-1
                 border: 2px solid #222
                 color: #222
@@ -220,11 +224,18 @@
 
 #about-wrapper,
 #tech-wrapper
+    height: 100%
+
     .square
         position: relative
+        height: inherit
 
         .square-text
-            margin-bottom: 10px
+            width: 85%
+
+            .text
+                margin-bottom: 10px
+                
 
         .square-image
             width: 100%
@@ -243,9 +254,12 @@
 
 
 #steps-wrapper
-    background-color: $color-3
+    align-content: center
+    align-items: center
     justify-content: space-evenly
-    padding: 5rem
+    width: 85%
+    height: inherit
+    margin: auto
 
 
     .step
@@ -280,7 +294,7 @@
 
 #footer-wrapper
     background-color: #42328D
-    padding: 1rem 1.5rem 1.5rem
+    padding: 1.5rem
     font-size: 0.9rem
     color: #eee
 
@@ -331,7 +345,8 @@
         .square
             .square-text-container
                 .square-text
-                    line-height: 2.25
+                    .text
+                        line-height: 2.25
 
 
     #steps-wrapper
