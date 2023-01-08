@@ -248,7 +248,7 @@ function jikanGetAnime(animeTitle) {
 
 
     // https://jikan.docs.apiary.io/#reference/0/search
-    fetch(`https://api.jikan.moe/v3/search/anime?q=${animeTitle}&limit=3`)
+    fetch(`https://api.jikan.moe/v4/anime?q=${animeTitle}&limit=3`)
     .then(function (response) {
         return response.json();
     })
@@ -264,7 +264,7 @@ function jikanGetAnime(animeTitle) {
 
 
         // create anime nodes
-        for (var i = 0; i < result.results.length; i++) {
+        for (var i = 0; i < result.data.length; i++) {
             // anime container
             var animeNode = document.createElement("div");
             animeNode.setAttribute("class", "anime");
@@ -273,7 +273,7 @@ function jikanGetAnime(animeTitle) {
 
             // anchor and img nodes
             var anchorNode = document.createElement("a");
-            anchorNode.setAttribute("href", result.results[i].url);
+            anchorNode.setAttribute("href", result.data[i].url);
             anchorNode.setAttribute("target", "_blank");
             // target="_blank" vulnerability:
             // https://www.instagram.com/p/CDgmaJZoJcD/?igshid=1w6yamh3yyxbb
@@ -281,7 +281,7 @@ function jikanGetAnime(animeTitle) {
             anchorNode.setAttribute("class", "anime-link");
             
             var imgNode = document.createElement("img");
-            imgNode.setAttribute("src", result.results[i].image_url);
+            imgNode.setAttribute("src", result.data[i].images.jpg.image_url);
             imgNode.setAttribute("alt", `image of ${animeTitle}`);
             imgNode.setAttribute("class", "anime-image");
             
@@ -291,14 +291,14 @@ function jikanGetAnime(animeTitle) {
 
             // anchor and p nodes
             var anchorNode2 = document.createElement("a");
-            anchorNode2.setAttribute("href", result.results[i].url);
+            anchorNode2.setAttribute("href", result.data[i].url);
             anchorNode2.setAttribute("target", "_blank");
             anchorNode2.setAttribute("rel", "noopener noreferrer");
             anchorNode2.setAttribute("class", "anime-link");
             
             var pNode = document.createElement("p");
             pNode.setAttribute("class", "anime-title");
-            var pText = document.createTextNode(result.results[i].title);
+            var pText = document.createTextNode(result.data[i].title);
             pNode.appendChild(pText);
 
             anchorNode2.appendChild(pNode);
